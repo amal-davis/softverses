@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing</title>
+    <link rel="shortcut icon" href="{% static 'images/tittle-logo.png' %}" type="image/x-icon">
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon-set.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+</head>
+<style>
+    /* Custom CSS to remove card border */
+    .card {
+        border: none;
+    }
+</style>
+
+<body>
+
+
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+     ============================================= -->
+    <div class="top-bar-area inc-pad bg-theme text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> Info@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i> Office Hours: 8:00 AM – 7:45 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+
+    <!-- Header 
+     ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav inc-border">
+                    <ul>
+                        <li class="contact">
+                            <i class="fas fa-phone"></i>
+                            <p>Call us today! <strong>+91 8075955676</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage' %}">
+                        <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="{% url 'homepage' %}">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'service' %}">Services</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'technology' %}">Technology</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blog' %}">Blog</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact</a>
+
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center">
+                    <h4>Digital Marketing</h4>
+                    <h2>Digital Marketing Services</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card ">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/content_marketing_icon.png' %}" class="img-fluid" alt="Content Marketing">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Content marketing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Content marketing is a form of marketing focused on creating,
+                                publishing, and distributing content for a targeted audience online.Building a
+                                sustainable, trusting relationship with your customers that can potentially lead to many
+                                sales over time,Content Marketing is a type of digital marketing that focuses on
+                                creating and promoting different types of content, to generate leads and sales</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img class="img-fluid" src="{% static 'images/Social-media-marketing.png' %}" alt="social media marketing">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Social media marketing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Social media marketing is the use of social media platforms and
+                                websites to promote a product or service. Although the terms e-marketing and digital
+                                marketing are still dominant in academia, social media marketing is becoming more
+                                popular for both practitioners and researchers
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/Email_Marketing_Icon.png' %}" class="img-fluid" alt="Email marketing icon">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Email marketing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Email marketing is the act of sending a commercial message, typically
+                                to a group of people, using email. In its broadest sense, every email sent to a
+                                potential or current customer could be considered email marketing. It involves using
+                                email to send advertisements, request business, or solicit sales or donations.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img class="img-fluid" src="{% static 'images/Affiliate_Marketing_icon.png' %}" alt="Affliate Marketing">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Affiliate marketing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Affiliate marketing is a marketing arrangement in which affiliates
+                                receive a commission for each visit, signup or sale they generate for a merchant. This
+                                arrangement allows businesses to outsource part of the sales process.utilizes the
+                                ever-growing popularity of industry experts and social media influencers. In working
+                                with these third-party influencers</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img class="img-fluid" src="{% static 'images/Advertismenent_icon.png' %}" alt="Advertisment Icon">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Advertising</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Advertising is the practice and techniques employed to bring
+                                attention to a product or service. Advertising aims to put a product or service in the
+                                spotlight in hopes of drawing it attention from consumers.Overall, native advertising is
+                                a powerful tool for businesses looking to reach their target audience in a more organic,
+                                less intrusive way. By creating content
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img class="img-fluid" src="{% static 'images/Influencers_icon.png' %}" alt="Influencer Marketing icon">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Influencer marketing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Influencer marketing is a form of social media marketing involving
+                                endorsements and product placement from influencers, people and organizations who have a
+                                purported expert level of knowledge or social influence in their field.Influencer
+                                marketing is one of the upcoming forms of digital marketing. It makes use of people with
+                                an enormous following on their social media accounts.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape">
+            <img src="{% static 'images/map.svg' %}" alt="Shape">
+        </div>
+        <!-- Fixed Shape -->
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="{% static 'images/white_logo.png' %}" alt="Logo">
+                            <p>
+                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
+                            </p>
+                            <form action="#">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'homepage' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about_us' %}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'service' %}">Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'technology' %}">Technology</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'blog' %}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'web_services' %}">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'digiatl_marketing' %}">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'branding' %}">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="#">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#">SocialMedia Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Hosting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                    </li>
+                                    <li>
+                                        <strong>Email:</strong>
+                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download">
+                                <h5>Download</h5>
+                                <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                                <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/equal-height.min.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/count-to.js' %}"></script>
+    <script src="{% static 'js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

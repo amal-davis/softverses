@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+
+    <link rel="shortcut icon" href="{% static 'images/tittle-logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon-set.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+
+
+
+
+
+
+
+
+</head>
+<style>
+    .equal-height-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .equal-height-card .card-img-top {
+        flex-grow: 1;
+        object-fit: cover;
+        max-height: 100%;
+    }
+
+    .equal-height-card .card-body {
+        flex-grow: 0;
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area inc-pad bg-theme text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> Info@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i> Office Hours: 8:00 AM – 7:45 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav inc-border">
+                    <ul>
+                        <li class="contact">
+                            <i class="fas fa-phone"></i>
+                            <p>Call us today! <strong>+91 8075955676</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage' %}">
+                        <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="{% url 'homepage' %}">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'service' %}">Services</a>
+
+                        </li>
+                        <li>
+                            <a class="active" href="{% url 'technology' %}">Technology</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact</a>
+
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark bg-fixed text-light"
+        style=" background-image: url('static/images/code-image.png');">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6">
+                    <h2>Technology</h2>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">The Django web framework is a free, open source framework that
+                            can speed up development of a web application being built in the Python programming
+                            language.
+
+                            Django—pronounced “Jango,” named after the famous jazz guitarist Django Reinhardt—is a free,
+                            open source framework that was first publicly released in 2005. Django facilitates “rapid
+                            development and clean, pragmatic design.”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">Amazon Web Services (AWS) is an advance and secure cloud
+                            services platform provided by Amazon.com. AWS officially launched in 2006, it provides
+                            online services for websites and client-side applications. AWS includes compute, database,
+                            networking, storage, application services, mobile, deployment, analytics, management,
+                            developer tools, and tools for the Internet of things (IoT).
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">Python is a programming language that follows an
+                            object-oriented approach with dynamic semantics that is effectively used in Rapid
+                            application development or coupling components together. Python out of the box ensures
+                            program modularity and reusability. Moreover their codes are easy to maintain.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">HyperText Markup Language is the computer language that
+                            facilitates website creation. The language, which has code words and syntax just like any
+                            other language, is relatively easy to comprehend and, as time goes on, increasingly powerful
+                            in what it allows someone to create. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">CSS stands for Cascading Style Sheets. It is a style sheet
+                            language which is used to describe the look and formatting of a document written in markup
+                            language. It provides an additional feature to HTML. It is generally used with HTML to
+                            change the style of web pages and user interfaces. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 single-item pt-5">
+                <div class="card equal-height-card">
+                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-center">JavaScript is a scripting or programming language that allows
+                            you to implement complex features on web pages — every time a web page does more than just
+                            sit there and display static information for you to look at — displaying timely content
+                            updates, interactive maps,animated 2D/3D graphics, scrolling video jukeboxes,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape">
+            <img src="{% static 'images/map.svg' %}" alt="Shape">
+        </div>
+        <!-- Fixed Shape -->
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="{% static 'images/white_logo.png' %}" alt="Logo">
+                            <p>
+                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
+                            </p>
+                            <form action="#">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'homepage' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about_us' %}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'service' %}">Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'technology' %}">Technology</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'blog' %}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'web_services' %}">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'digiatl_marketing' %}">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'branding' %}">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="#">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#">SocialMedia Management</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Hosting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                    </li>
+                                    <li>
+                                        <strong>Email:</strong>
+                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download">
+                                <h5>Download</h5>
+                                <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                                <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/equal-height.min.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/count-to.js' %}"></script>
+    <script src="{% static 'js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
