@@ -4522,6 +4522,9 @@ video {
   padding: 50px 30px;
   box-shadow: 0 15px 55px -5px rgba(9,31,67,.1);
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .service-area .service-items .item .icon {

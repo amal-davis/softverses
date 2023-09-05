@@ -67,7 +67,7 @@ def contact_details(request):
          'message from'+ message_name, # Subject
          message + '\n from email:' + messaage_email + '\n Phone Number:' + message_phnnum, # Message
          messaage_email, # From email
-         ['amald416@gmail.com']   # To email
+         ['akhilakd5299@gmail.com']   # To email
         )
         mail = Contact_details(name=message_name,phone_no=message_phnnum,email=messaage_email,message=message)
         mail.save()

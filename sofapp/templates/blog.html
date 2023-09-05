@@ -53,7 +53,7 @@
     }
 
     .journal-item {
-       
+
         padding: 10px;
         border-bottom: 1px solid #ccc;
         cursor: pointer;
@@ -73,20 +73,32 @@
         color: #6000ff;
         /* Change this to your desired active color */
     }
-.item-date,
-.item-author {
-    font-size: 14px;
-    color: #929291;
-    margin: 5px 0;
-}
-.item-content {
-    display: flex;
-    align-items: center;
+
+    .item-date,
+    .item-author {
+        font-size: 14px;
+        color: #929291;
+        margin: 5px 0;
+    }
+
+    .item-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-text {
+        margin-left: 10px;
+    }
+    .detail-section {
+    opacity: 0; /* Initially set to be transparent */
+    padding: 10px;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 
-.item-text {
-    margin-left: 10px;
+.detail-section.active {
+    opacity: 1; /* When active, fade in by setting opacity to 1 */
 }
+
     @media (max-width: 500px) {
         .journal-list {
             flex: 2;
@@ -124,16 +136,17 @@
             font-size: 14px;
         }
     }
+
     @media (min-width: 768px) {
-    .item-content {
-        flex-direction: row;
-        align-items: flex-start;
+        .item-content {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .item-text {
+            margin-left: 20px;
+        }
     }
-    
-    .item-text {
-        margin-left: 20px;
-    }
-}
 </style>
 
 <body>
@@ -286,7 +299,8 @@
                 <div id="list1">
                     <div class="journal-item" data-index="1">
                         <div class="item-content">
-                            <img src="{% static 'images/Web-development-blog-image.png' %}" alt="Journal 1" class="img-fluid">
+                            <img src="{% static 'images/Web-development-blog-image.png' %}" alt="Journal 1"
+                                class="img-fluid">
                             <div class="item-text">
                                 <h4>Website In Modern Digital World</h4>
                                 <p class="item-date">Date: September 1, 2023</p>
@@ -297,9 +311,10 @@
 
                     <div class="journal-item" data-index="2">
                         <div class="item-content">
-                            <img src="{% static 'images/Digital-marketing-blog-image.png' %}" alt="Journal 1" class="img-fluid">
+                            <img src="{% static 'images/Digital-marketing-blog-image.png' %}" alt="Journal 1"
+                                class="img-fluid">
                             <div class="item-text">
-                                <h4>Marketing Statergy In Dogital World</h4>
+                                <h4>Marketing Statergy In Digital World</h4>
                                 <p class="item-date">Date: September 1, 2023</p>
                                 <p class="item-author">Author: Amal Davis</p>
                             </div>
@@ -327,7 +342,7 @@
                             too increases.</p>
                     </div>
                     <div class="detail-section" id="detailSection2">
-                        <h3 class="text-center">Marketing Statergy In Dogital World</h3>
+                        <h3 class="text-center">Marketing Statergy In Digital World</h3>
                         <p>Digital marketing is the component of marketing that uses the Internet and online-based
                             digital technologies such as desktop computers, mobile phones and other digital media and
                             platforms to promote products and services. One of the most significant advantages of
@@ -335,14 +350,17 @@
                     </div>
                     <div class="detail-section" id="detailSection3">
                         <h3 class="text-center">Branding Increase Value Of Your Business</h3>
-                        <p>This is the detailed description for Journal 3.</p>
+                        <p>Digital branding will give your marketing much greater cohesion and direction. It can help to
+                            frame the direction of your company overall, creating a tangible brand that people can
+                            relate to and feel loyalty towards. It helps you target the customers who will be most
+                            receptive to what you have to offer.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
@@ -357,11 +375,12 @@
                         <div class="f-item about">
                             <img src="{% static 'images/white_logo.png' %}" alt="Logo">
                             <p>
-                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
+                                Happen active county. Winding for the morning am shyness evident to poor. Garrets
+                                because elderly new.
                             </p>
                             <form action="#">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -447,7 +466,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
@@ -492,39 +511,50 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const listItems = document.querySelectorAll(".journal-item");
-            const detailSections = document.querySelectorAll(".detail-section");
+    const listItems = document.querySelectorAll(".journal-item");
+    const detailSections = document.querySelectorAll(".detail-section");
 
-            // Show details of the first journal by default
-            showDetailSection(1);
+    // Show details of the first journal by default
+    showDetailSection(1);
 
-            listItems.forEach((item) => {
-                item.addEventListener("click", () => {
-                    const index = item.getAttribute("data-index");
-                    showDetailSection(index);
-                    setActiveHeading(index);
-                });
+    listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            const index = item.getAttribute("data-index");
+            // Hide all detail sections
+            detailSections.forEach(section => {
+                section.classList.remove("active");
             });
+            // Show the selected detail section with a delay for the fade-in effect
+            setTimeout(() => {
+                showDetailSection(index);
+            }, 800); // Adjust the delay as needed
+            setActiveHeading(index);
+        });
+    });
 
-            function showDetailSection(index) {
-                detailSections.forEach(section => {
-                    section.style.display = "none";
-                });
+    function showDetailSection(index) {
+        detailSections.forEach(section => {
+            section.style.display = "none";
+        });
 
-                const selectedDetailSection = document.getElementById(`detailSection${index}`);
-                selectedDetailSection.style.display = "block";
-            }
+        const selectedDetailSection = document.getElementById(`detailSection${index}`);
+        selectedDetailSection.style.display = "block";
 
-            function setActiveHeading(index) {
-                listItems.forEach(item => {
-                    if (item.getAttribute("data-index") === index) {
-                        item.querySelector("h4").classList.add("active-heading");
-                    } else {
-                        item.querySelector("h4").classList.remove("active-heading");
-                    }
-                });
+        // Add the 'active' class to trigger the fade-in effect
+        selectedDetailSection.classList.add("active");
+    }
+
+    function setActiveHeading(index) {
+        listItems.forEach(item => {
+            if (item.getAttribute("data-index") === index) {
+                item.querySelector("h4").classList.add("active-heading");
+            } else {
+                item.querySelector("h4").classList.remove("active-heading");
             }
         });
+    }
+});
+
 
     </script>
 </body>

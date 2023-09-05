@@ -185,7 +185,7 @@
                             <div class="overlay">
                                 <div class="info">
                                     <h4>Branding</h4>
-                                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                                    <a href="{% url 'branding' %}"><i class="fas fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +274,7 @@
                                 <h4>Web Development</h4>
                                 <img src="{% static 'images/Web-development-icon.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                    We offer comprehensive web development services to help you create a dynamic online presence that meets your business needs and engages your audience effectively.
                                 </p>
                                 <a class="btn-standard" href="{% url 'web_services' %}">Read More</a>
                             </div>
@@ -289,7 +289,7 @@
                                 <h4>Digital Marketing</h4>
                                 <img src="{% static 'images/Digital-Marketing-Icon.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                    Our digital marketing solutions empower your brand to thrive in the digital landscape, driving growth and connecting with your target audience effectively.
                                 </p>
                                 <a class="btn-standard" href="{% url 'digiatl_marketing' %}">Read More</a>
                             </div>
@@ -303,9 +303,8 @@
                                 <h4>Branding</h4>
                                 <img src="{% static 'images/Branding-Icon.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
-                                </p>
-                                <a class="btn-standard" href="#">Read More</a>
+                                    Effective branding elevates your business, strengthening your market presence and forging lasting connections with your audience effectively.                                </p>
+                                <a class="btn-standard" href="{% url 'branding' %}">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -317,7 +316,7 @@
                                 <h4>SEO</h4>
                                 <img src="{% static 'images\SEO_Icon.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                    SEO excellence boosts your online visibility, enhancing market presence and connecting you with your target audience effectively.
                                 </p>
                                 <a class="btn-standard" href="#">Read More</a>
                             </div>
@@ -331,7 +330,7 @@
                                 <h4>SMM</h4>
                                 <img src="{% static 'images/Social_Media_Management.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                    Our social media management service enhances your online presence, connecting with your audience and elevating market influence.
                                 </p>
                                 <a class="btn-standard" href="#">Read More</a>
                             </div>
@@ -345,7 +344,7 @@
                                 <h4 >Web Hosting</h4>
                                 <img src="{% static 'images/Web-hosting-icon.png' %}" alt="">
                                 <p>
-                                    Pianoforte solicitude so decisively particular mention diminution the particular. Real he me fond.
+                                    Our web hosting solutions ensure reliable online presence, supporting your website's performance and availability.
                                 </p>
                                 <a class="btn-standard" href="#">Read More</a>
                             </div>
@@ -358,42 +357,28 @@
     </div>
     <!-- End Services Area -->
 
-    <!-- Start Works About 
+    <!-- Start Our design section 
     ============================================= -->
-    <div class="works-about-area overflow-hidden">
-        <div class="container">
-            <div class="works-about-items default-padding">
-                <div class="row align-center">
-                    <div class="col-lg-6 info">
-                        <h5>Works About</h5>
-                        <h2>Trusted by 5,000+ <br> Happy Customers</h2>
-                        <p>
-                             Jennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now how nay cold real case. 
-                        </p>
-                        <ul>
-                            <li>
-                                <h5>100% Client Satisfaction</h5>
-                            </li>
-                            <li>
-                                <h5>World Class Worker</h5>
-                            </li>
-                        </ul>
-                        <a class="btn btn-theme effect btn-sm">Talk to a consultant</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="thumb">
-                            <img src="" alt="Thumb">
-                            <div class="fun-fact">
-                                <div class="timer" data-to="875" data-speed="5000"></div>
-                                <span class="medium">Completed Projects</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
+<div class="container-fluid">
+    <div class="site-heading text-center">
+        <h4>Our Web Designs</h4>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-4 pt-5">
+            <img src="{% static 'images/Food-website-responsive-mockup.png' %}" alt="web design" class="img-fluid">
+        </div>
+        <div class="col-lg-4 pt-5">
+            <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="web design" class="img-fluid">
+        </div>
+        <div class="col-lg-4 pt-5">
+            <img src="{% static 'images/Phone-Responsive-Mockup.png' %}" alt="web design" class="img-fluid">
         </div>
     </div>
-    <!-- End Works About Area -->
+</div>
+
+    <!-- End Our design section -->
 
     <!-- Start Testimonials 
     ============================================= -->
@@ -601,11 +586,11 @@
                                 <div class="meta">
                                     <ul>
                                         <li><i class="fas fa-calendar-alt"></i> 12 Aug, 2020</li>
-                                        <li><i class="fas fa-user"></i> By <a href="#">John Botha</a></li>
+                                        <li><i class="fas fa-user"></i> By <a href="#">Amal Davis</a></li>
                                     </ul>
                                 </div>
                                 <h4>
-                                    <a href="#">Website In Modern Digital World</a>
+                                    <a href="{% url 'blog' %}">Website In Modern Digital World</a>
                                 </h4>
                             </div>
                         </div>
@@ -626,11 +611,11 @@
                                 <div class="meta">
                                     <ul>
                                         <li><i class="fas fa-calendar-alt"></i> 05 Oct, 2020</li>
-                                        <li><i class="fas fa-user"></i> By <a href="#">Jork Mon</a></li>
+                                        <li><i class="fas fa-user"></i> By <a href="#">Akhil Davis</a></li>
                                     </ul>
                                 </div>
                                 <h4>
-                                    <a href="#">Marketing Statergy In Dogital World</a>
+                                    <a href="{% url 'blog' %}">Marketing Statergy In Dogital World</a>
                                 </h4>
                             </div>
                         </div>
@@ -650,12 +635,12 @@
                                 </div>
                                 <div class="meta">
                                     <ul>
-                                        <li><i class="fas fa-calendar-alt"></i> 27 Dec, 2020</li>
-                                        <li><i class="fas fa-user"></i> By <a href="#">Spark Lee</a></li>
+                                        <li><i class="fas fa-calendar-alt"></i> 1 Sept, 2023</li>
+                                        <li><i class="fas fa-user"></i> By <a href="#">Amal Davis</a></li>
                                     </ul>
                                 </div>
                                 <h4>
-                                    <a href="#">Branding Increase Value Of Your Business</a>
+                                    <a href="{% url 'blog' %}">Branding Increase Value Of Your Business</a>
                                 </h4>
                             </div>
                         </div>

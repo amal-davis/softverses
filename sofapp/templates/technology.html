@@ -33,20 +33,46 @@
 </head>
 <style>
     .equal-height-card {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-    .equal-height-card .card-img-top {
-        flex-grow: 1;
-        object-fit: cover;
-        max-height: 100%;
-    }
+.equal-height-card .position-relative {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust the padding as needed to control the spacing at the top and bottom */
+  position: relative;
+  cursor: pointer;
+}
 
-    .equal-height-card .card-body {
-        flex-grow: 0;
-    }
+.image-container {
+  position: relative;
+  width: 100px; /* Adjust the width of the small image as needed */
+}
+
+.small-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; /* Limit image height to container height */
+  filter: grayscale(100%); /* Convert the image to grayscale by default */
+  transition: filter 0.3s ease; /* Add a transition effect for a smooth hover effect */
+}
+
+.original-image {
+  display: none; /* Hide the original color image by default */
+}
+
+.equal-height-card:hover .small-image {
+  filter: grayscale(0%); /* Restore the original color when hovering over the card */
+}
+
+.card-body {
+  flex-grow: 0;
+}
+
 </style>
 
 <body>
@@ -196,9 +222,17 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/Django_logo.png' %}" class="small-image grayscale" alt="CSS Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/Django_logo.png' %}" alt="CSS Logo">
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text text-center">The Django web framework is a free, open source framework that
+                        <p class="card-text text-center" style="margin-top: 40px;">The Django web framework is a free,
+                            open source framework that
                             can speed up development of a web application being built in the Python programming
                             language.
 
@@ -210,21 +244,35 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/AWS_Logo.png' %}" class="small-image grayscale" alt="Aws Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/AWS_Logo.png' %}" alt="Aws Logo">
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text text-center">Amazon Web Services (AWS) is an advance and secure cloud
+                        <p class="card-text text-center">Amazon Web Services (AWS) is an advanced and secure cloud
                             services platform provided by Amazon.com. AWS officially launched in 2006, it provides
                             online services for websites and client-side applications. AWS includes compute, database,
                             networking, storage, application services, mobile, deployment, analytics, management,
-                            developer tools, and tools for the Internet of things (IoT).
-
-                        </p>
+                            developer tools, and tools for the Internet of things (IoT).</p>
                     </div>
                 </div>
+
+
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/Python_logo.png' %}" class="small-image grayscale" alt="CSS Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/Python_logo.png' %}" alt="CSS Logo">
+                        </div>
+                    </div>
                     <div class="card-body">
                         <p class="card-text text-center">Python is a programming language that follows an
                             object-oriented approach with dynamic semantics that is effectively used in Rapid
@@ -237,8 +285,15 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
-                    <div class="card-body">
+                <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/HTM_Logo.png' %}" class="small-image grayscale" alt="HTML Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/HTM_Logo.png' %}" alt="HTML Logo">
+                        </div>
+                    </div>                   
+                     <div class="card-body">
                         <p class="card-text text-center">HyperText Markup Language is the computer language that
                             facilitates website creation. The language, which has code words and syntax just like any
                             other language, is relatively easy to comprehend and, as time goes on, increasingly powerful
@@ -248,8 +303,15 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
-                    <div class="card-body">
+                        <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/CSS_logo.png' %}" class="small-image grayscale" alt="CSS Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/CSS_logo.png' %}" alt="CSS Logo">
+                        </div>
+                    </div>                    
+                     <div class="card-body">
                         <p class="card-text text-center">CSS stands for Cascading Style Sheets. It is a style sheet
                             language which is used to describe the look and formatting of a document written in markup
                             language. It provides an additional feature to HTML. It is generally used with HTML to
@@ -259,7 +321,14 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                    <img src="" class="card-img-top" alt="Image 1">
+                       <div class="position-relative d-flex justify-content-center align-items-center">
+                        <div class="image-container">
+                            <img src="{% static 'images/Javascript_logo.png' %}" class="small-image grayscale" alt="CSS Logo">
+                        </div>
+                        <div class="original-image">
+                            <img src="{% static 'images/Javascript_logo.png' %}" alt="CSS Logo">
+                        </div>
+                    </div>         
                     <div class="card-body">
                         <p class="card-text text-center">JavaScript is a scripting or programming language that allows
                             you to implement complex features on web pages — every time a web page does more than just
@@ -271,9 +340,9 @@
         </div>
     </div>
 
-   <!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light" style="margin-top: 40px;">
         <!-- Fixed Shape -->
         <div class="fixed-shape">
             <img src="{% static 'images/map.svg' %}" alt="Shape">
@@ -286,11 +355,12 @@
                         <div class="f-item about">
                             <img src="{% static 'images/white_logo.png' %}" alt="Logo">
                             <p>
-                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
+                                Happen active county. Winding for the morning am shyness evident to poor. Garrets
+                                because elderly new.
                             </p>
                             <form action="#">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -376,7 +446,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
