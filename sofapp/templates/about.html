@@ -38,7 +38,7 @@
                         <i class="fas fa-map-marker-alt"></i> California, TX 70240
                     </li>
                     <li>
-                        <i class="fas fa-envelope-open"></i> Info@gmail.com
+                        <i class="fas fa-envelope-open"></i> info@softverses.com
                     </li>
                 </ul>
             </div>
@@ -236,34 +236,30 @@
         </div>
     </div>
     <!-- End About Area -->
- <!-- Start Works About 
+ <!-- Start Who We Area 
     ============================================= -->
-    <div class="works-about-area overflow-hidden">
-        <div class="container">
-            <div class="works-about-items default-padding">
-                <div class="row align-center">
+    <div class="who-we-area-area bg-dark text-light">
+        <div class="container-fluid">
+            <div class="who-we-area-box">
+                <div class="row">
+                    <div class="col-lg-6 thumb bg-cover" style="background-image: url('static/images/Mission Vission.png');"></div>
                     <div class="col-lg-6 info">
-                        <h5>Works About</h5>
-                        <h2>Trusted by 5,000+ <br> Happy Customers</h2>
-                        <p>
-                             Jennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now how nay cold real case. 
-                        </p>
-                        <ul>
-                            <li>
-                                <h5>100% Client Satisfaction</h5>
-                            </li>
-                            <li>
-                                <h5>World Class Worker</h5>
-                            </li>
-                        </ul>
-                        <a class="btn btn-theme effect btn-sm">Talk to a consultant</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="thumb">
-                            <img src="" alt="Thumb">
-                            <div class="fun-fact">
-                                <div class="timer" data-to="875" data-speed="5000"></div>
-                                <span class="medium">Completed Projects</span>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 item">
+                                <h4>Our Mission</h4>
+                                <h2 class="text-blur">Mission</h2>
+                                <p>
+                                    Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
+                                </p>
+                                <a class="btn circle btn-light effect btn-sm">Know More <i class="fas fa-arrow-alt-circle-right"></i></a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 item">
+                                <h4>Our Vision</h4>
+                                <h2 class="text-blur">Vision</h2>
+                                <p>
+                                    Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
+                                </p>
+                                <a class="btn circle btn-light effect btn-sm">Know More <i class="fas fa-arrow-alt-circle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -271,7 +267,8 @@
             </div>
         </div>
     </div>
-    <!-- End Works About Area -->
+    <!-- End Who We Area Area -->
+
 
 <!-- Start Work Process 
     ============================================= -->
@@ -376,7 +373,7 @@
         </div>
         <!-- Fixed Shpae Bottom -->
         <div class="fixed-shape-bottom">
-            <img src="" alt="Shape">
+            <img src="{% static 'images/9.png' %}" alt="Shape">
         </div>
         <!-- Fixed Shpae Bottom -->
     </div>
@@ -552,7 +549,8 @@
                             <p>
                                 Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
                             </p>
-                            <form action="#">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
                                 <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
                             </form>
@@ -620,7 +618,7 @@
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:info@softverses.com">info@softverses.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -686,6 +684,37 @@
     <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
     <script src="{% static 'js/bootsnav.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
+
+
+    <script>
+        $(document).ready(function () {
+    $("#subscribe-form").on("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission behavior
+
+        var formData = new FormData($(this)[0]);
+
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                // Display the success message in an alert pop-up
+                alert(data.success_message);
+
+                // Optionally, you can clear the input field
+                $("#subscribe-form input[name='email']").val('');
+            },
+            error: function (xhr, status, error) {
+                // Handle errors here
+                console.error(xhr.responseText);
+            },
+        });
+    });
+});
+
+    </script>
 
 </body>
 </html>

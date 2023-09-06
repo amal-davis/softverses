@@ -166,7 +166,7 @@
                             <i class="fas fa-map-marker-alt"></i> California, TX 70240
                         </li>
                         <li>
-                            <i class="fas fa-envelope-open"></i> Info@gmail.com
+                            <i class="fas fa-envelope-open"></i> info@softverses.com
                         </li>
                     </ul>
                 </div>
@@ -378,9 +378,10 @@
                                 Happen active county. Winding for the morning am shyness evident to poor. Garrets
                                 because elderly new.
                             </p>
-                            <form action="#">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
                             </form>
                         </div>
                     </div>
@@ -446,7 +447,7 @@
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:info@softverses.com">info@softverses.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -554,6 +555,33 @@
         });
     }
 });
+        $(document).ready(function () {
+       $("#subscribe-form").on("submit", function (e) {
+           e.preventDefault(); // Prevent the default form submission behavior
+   
+           var formData = new FormData($(this)[0]);
+   
+           $.ajax({
+               type: "POST",
+               url: $(this).attr("action"),
+               data: formData,
+               processData: false,
+               contentType: false,
+               success: function (data) {
+                   // Display the success message in an alert pop-up
+                   alert(data.success_message);
+   
+                   // Optionally, you can clear the input field
+                   $("#subscribe-form input[name='email']").val('');
+               },
+               error: function (xhr, status, error) {
+                   // Handle errors here
+                   console.error(xhr.responseText);
+               },
+           });
+       });
+   });
+
 
 
     </script>

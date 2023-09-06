@@ -16,4 +16,6 @@ urlpatterns = [
     path('digiatl_marketing',views.digiatl_marketing,name='digiatl_marketing'),
     path('branding',views.branding,name='branding'),
     path('contact_details',views.contact_details,name='contact_details'),
+    path('contact_home_details',views.contact_home_details,name='contact_home_details'),
+    path('email_subscribe_home',views.email_subscribe_home,name='email_subscribe_home'),
 ]

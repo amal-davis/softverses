@@ -2785,7 +2785,7 @@ video {
   content: "";
   height: 100%;
   width: 40%;
-  background: url(assets/img/shape/1.png);
+  background: url('../images/1.png');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;

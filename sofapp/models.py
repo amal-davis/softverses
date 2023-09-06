@@ -9,3 +9,7 @@ class Contact_details(models.Model):
     phone_no = models.IntegerField()
     email = models.EmailField()
     message = models.CharField(max_length=600)
+
+
+class Subscribe_Option(models.Model):
+    email = models.EmailField()
