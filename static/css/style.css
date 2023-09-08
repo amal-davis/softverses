@@ -6002,7 +6002,7 @@ video {
   content: "";
   height: 2px;
   width: 30px;
-  background: #086AD8;
+  background: #6000ff;
   margin-top: -1px;
 }
 
@@ -7646,7 +7646,7 @@ footer.bg-dark .footer-bottom a {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/preloader.gif) center no-repeat #ffffff;
+  background: url('../images/pre_loader.gif') center no-repeat #ffffff;
   text-align: center;
 }
 
