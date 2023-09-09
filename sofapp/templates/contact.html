@@ -44,7 +44,7 @@
                  <div class="info">
                      <ul>
                          <li>
-                             <i class="fas fa-clock"></i> Office Hours: 8:00 AM – 7:45 PM
+                             <i class="fas fa-clock"></i> Working Hours: 8:00 AM – 7:45 PM
                          </li>
                      </ul>
                  </div>
@@ -57,7 +57,7 @@
                          </li>
                          <li>
                              <a href="#">
-                                 <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
                              </a>
                          </li>
                          <li>
@@ -285,9 +285,35 @@
         </div>
     </div>
     <!-- End Contact Area -->
+<!-- Start Our design section 
+    ============================================= -->
+    
+    <div class="container-fluid">
+        <div class="site-heading text-center">
+            <h4>Our Web Designs</h4>
+            <h2>Various Types Of Designs</h2>
+
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/Food-website-responsive-mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/Phone-Responsive-Mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+        <!-- End Our design section -->
+    
+
 <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light" style="margin-top: 40px;">
         <!-- Fixed Shape -->
         <div class="fixed-shape">
             <img src="{% static 'images/map.svg' %}" alt="Shape">
@@ -348,7 +374,7 @@
                                     <a href="{% url 'branding' %}">Branding</a>
                                 </li>
                                 <li>
-                                    <a href="#">SEO</a>
+                                    <a href="{% url 'seo' %}">SEO</a>
                                 </li>
                                 <li>
                                     <a href="#">SocialMedia Management</a>
@@ -396,11 +422,11 @@
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
-                                <a href="#">Terms</a>
+                                <a href="#">Terms & conditions</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">Privacy</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#">Support</a>
                             </li>

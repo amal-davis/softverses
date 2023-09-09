@@ -18,4 +18,6 @@ urlpatterns = [
     path('contact_details',views.contact_details,name='contact_details'),
     path('contact_home_details',views.contact_home_details,name='contact_home_details'),
     path('email_subscribe_home',views.email_subscribe_home,name='email_subscribe_home'),
+    path('seo',views.seo,name='seo'),
+    path('mission_vision',views.mission_vision,name='mission_vision'),
 ]

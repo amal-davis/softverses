@@ -56,6 +56,14 @@ def branding(request):
     return render(request,'branding.html') 
 
 
+def seo(request):
+    return render(request,'seo.html')
+
+
+def mission_vision(request):
+    return render(request,'mission_and_vision.html')
+
+
 def contact_details(request):
     if request.method == 'POST':
         message_name = request.POST['name']
