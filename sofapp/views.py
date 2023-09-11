@@ -64,6 +64,10 @@ def mission_vision(request):
     return render(request,'mission_and_vision.html')
 
 
+def social_media_management(request):
+    return render(request,'social_media_management.html')
+
+
 def contact_details(request):
     if request.method == 'POST':
         message_name = request.POST['name']

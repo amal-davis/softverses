@@ -173,7 +173,7 @@
                             <h2>Need Help?</h2>
                             <p>Reach out to the world’s most reliable IT services.</p>
                         </div>
-                        <form action="{% url 'contact_details' %}" method="post" class="contact-form" enctype="multipart/form-data">
+                        <form action="{% url 'contact_home_details' %}" method="post" class="contact-form" enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-6">
@@ -377,7 +377,7 @@
                                     <a href="{% url 'seo' %}">SEO</a>
                                 </li>
                                 <li>
-                                    <a href="#">SocialMedia Management</a>
+                                    <a href="{% url 'social_media_management' %}">SocialMedia Management</a>
                                 </li>
                                 <li>
                                     <a href="#">Web Hosting</a>
@@ -496,6 +496,34 @@
            });
        });
    });
+
+
+   $(document).ready(function () {
+    $("form.contact-form").on("submit", function () {
+        var formData = new FormData($(this)[0]);
+
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                // Display the success message in a browser-native alert
+                alert(data.success_message);
+
+                // Optionally, you can reset the form
+                $("form.contact-form")[0].reset();
+            },
+            error: function (xhr, status, error) {
+                // Handle errors here
+                console.error(xhr.responseText);
+            },
+        });
+
+        return false; // Prevent the default form submission
+    });
+});
    </script>
 
 

@@ -1961,10 +1961,20 @@ video {
 }
 .video-content h1{
   color: #fff;
-  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  position: relative;
+  display: inline-block;
 
 }
-
+@media(max-width:500px){
+  .video-content h1{
+    font-size: 36px;
+    line-height: 60px;
+  }
+}
 /* Content */
 .banner-area .thumb {
   position: relative;

@@ -20,4 +20,5 @@ urlpatterns = [
     path('email_subscribe_home',views.email_subscribe_home,name='email_subscribe_home'),
     path('seo',views.seo,name='seo'),
     path('mission_vision',views.mission_vision,name='mission_vision'),
+    path('social_media_management',views.social_media_management,name='social_media_management'),
 ]
