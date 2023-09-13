@@ -68,6 +68,10 @@ def social_media_management(request):
     return render(request,'social_media_management.html')
 
 
+def web_hosting(request):
+    return render(request,'web_hosting.html')
+
+
 def contact_details(request):
     if request.method == 'POST':
         message_name = request.POST['name']

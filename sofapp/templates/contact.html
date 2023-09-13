@@ -178,13 +178,13 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required>
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -200,7 +200,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="i-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need."></textarea>
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need." required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -211,8 +211,8 @@
                                     </button>
                                 </div>
                             </div>
-                            
                         </form>
+                        
                     </div>
                     <!-- Alert Message -->
 {% if success_message %}
@@ -380,7 +380,7 @@
                                     <a href="{% url 'social_media_management' %}">SocialMedia Management</a>
                                 </li>
                                 <li>
-                                    <a href="#">Web Hosting</a>
+                                    <a href="{% url 'web_hosting' %}">Web Hosting</a>
                                 </li>
                             </ul>
                         </div>

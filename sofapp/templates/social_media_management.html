@@ -21,126 +21,132 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 </head>
+<style>
+    /* Custom CSS to remove card border */
+    .card {
+        border: none;
+    }
+</style>
 <body>
-<!-- Preloader Start -->
-<div class="se-pre-con"></div>
-<!-- Preloader Ends -->
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
 
-<!-- Start Header Top 
+    <!-- Start Header Top 
 ============================================= -->
-<div class="top-bar-area inc-pad bg-theme text-light">
-    <div class="container">
-        <div class="row align-center">
-            <div class="col-lg-6 info">
-                <ul>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i> California, TX 70240
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope-open"></i> info@softverses.com
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6 text-right item-flex">
-                <div class="info">
+    <div class="top-bar-area inc-pad bg-theme text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
                     <ul>
                         <li>
-                            <i class="fas fa-clock"></i>Working Hours: 8:00 AM – 7:45 PM
+                            <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> info@softverses.com
                         </li>
                     </ul>
                 </div>
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-lg-6 text-right item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i>Working Hours: 8:00 AM – 7:45 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Header Top -->
+    <!-- End Header Top -->
 
 
-<!-- Header 
+    <!-- Header 
 ============================================= -->
-<header id="home">
+    <header id="home">
 
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
 
-        <div class="container">
+            <div class="container">
 
-            <!-- Start Atribute Navigation -->
-            <div class="attr-nav inc-border">
-                <ul>
-                    <li class="contact">
-                       <i class="fas fa-phone"></i>
-                       <p>Call us today! <strong>+91 8075955676</strong></p>
-                   </li>
-                </ul>
-            </div>        
-            <!-- End Atribute Navigation -->
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav inc-border">
+                    <ul>
+                        <li class="contact">
+                            <i class="fas fa-phone"></i>
+                            <p>Call us today! <strong>+91 8075955676</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
 
-            <!-- Start Header Navigation -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="{% url 'homepage' %}">
-                    <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="Logo">
-                </a>
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage' %}">
+                        <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="{% url 'homepage' %}">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                        </li>
+                        <li>
+                            <a class="active" href="{% url 'service' %}">Services</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'technology' %}">Technology</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blog' %}">Blog</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact</a>
+
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
-<!-- End Header Navigation -->
 
-           <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="navbar-menu">
-               <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                   <li>
-                       <a href="{% url 'homepage' %}">Home</a>
-                       
-                   </li>
-                   <li>
-                       <a href="{% url 'about_us' %}" >About Us</a>
-                       
-                   </li>
-                   <li >
-                       <a class="active" href="{% url 'service' %}">Services</a>
-                       
-                   </li>
-                   <li>
-                       <a href="{% url 'technology' %}"  >Technology</a>                           
-                   </li>
-                   <li>
-                       <a href="{% url 'blog' %}">Blog</a>
+        </nav>
+        <!-- End Navigation -->
 
-                   </li>
-                   <li>
-                       <a href="{% url 'contact' %}">Contact</a>
-
-                   </li>
-               </ul>
-           </div><!-- /.navbar-collapse -->
-       </div>
-
-   </nav>
-   <!-- End Navigation -->
-
-</header>
-<!-- End Header -->
+    </header>
+    <!-- End Header -->
 
 
     <div class="container" style="margin-top: 40px;">
@@ -154,12 +160,262 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Social media management services have become indispensable for businesses and individuals alike in
+                    the digital age. These services are like the conductors of the online orchestra, harmonizing a
+                    brand's presence across various platforms. From creating engaging content and scheduling posts to
+                    analyzing performance metrics and engaging with the audience, social media managers wear many hats.
+                    They craft and execute strategies that not only boost brand visibility but also foster meaningful
+                    connections with followers. In an era where a tweet or an Instagram post can go viral in seconds,
+                    social media management services are the guardians of a brand's reputation, ensuring that it
+                    resonates positively with its target audience and stays in tune with the ever-evolving trends of the
+                    social media landscape.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'images/Social_Media_Management_image.png' %}" alt="Social_Media_Management">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 60px;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 single-item">
+                <div class="card ">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/Social_Media_Management_Content_Publishing_icon.png' %}"
+                            class="img-fluid" alt="Social_Media_Management_Content_Publishing_icon">
 
-    
-    
-    
-    
-    
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Content Publishing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Content publishing is the heartbeat of effective social media
+                                management. It's the art of curating, creating, and scheduling posts that capture
+                                attention and engage the audience. Social media managers meticulously plan content
+                                calendars, ensuring a consistent stream of relevant and valuable posts across platforms.
+                                They understand the nuances of each channel, tailoring content to suit the preferences
+                                of the audience. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/Social-media-marketing_Target_Audience.png' %}"
+                            class="img-fluid" alt="Social-media-marketing_Target_Audience">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Targeted Audience</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">In social media marketing, a targeted audience is the specific group
+                                of individuals or demographics that a brand aims to reach with its content and
+                                advertisements. It's the essence of precision in the digital landscape. By defining a
+                                precise target audience, businesses can tailor their messaging, visuals, and strategies
+                                to resonate with the right people, increasing the likelihood of engagement and
+                                conversion.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/Social-media-marketing_Analysing_Icon.png' %}" class="img-fluid"
+                            alt="Social-media-marketing_Analysing_Icon">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Analysing</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Social media marketing analysis is the compass that guides effective
+                                digital strategies. It involves a deep dive into the performance metrics of social media
+                                campaigns, dissecting data to uncover insights. Social media marketers scrutinize
+                                engagement rates, click-through rates, conversion metrics, and audience demographics to
+                                assess what's working and what needs refinement. 
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 single-item">
+                <div class="card">
+                    <div class="card-image text-center">
+                        <img src="{% static 'images/Social-media-marketing_Feedback_Icon.png' %}" class="img-fluid"
+                            alt="Social-media-marketing_Feedback_Icon">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <h4 class="text-center">Feedback</h4>
+
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center">Social media marketing feedback is the invaluable dialogue that
+                                occurs between brands and their online communities. It involves listening to customer
+                                comments, reviews, and reactions on social platforms. Feedback provides businesses with
+                                real-time insights into customer sentiments, preferences, and pain points. It's a
+                                two-way street where brands can address concerns, express gratitude for positive
+                                feedback, and even spark conversations that generate user-generated content.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+<!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light" style="margin-top: 40px;">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape">
+            <img src="{% static 'images/map.svg' %}" alt="Shape">
+        </div>
+        <!-- Fixed Shape -->
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="{% static 'images/white_logo.png' %}" alt="Logo">
+                            <p>
+                                Happen active county. Winding for the morning am shyness evident to poor. Garrets
+                                because elderly new.
+                            </p>
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Company</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'homepage' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about_us' %}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'service' %}">Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'technology' %}">Technology</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'blog' %}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'web_services' %}">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'digiatl_marketing' %}">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'branding' %}">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'seo' %}">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'social_media_management' %}">SocialMedia Management</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'web_hosting' %}">Web Hosting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                    </li>
+                                    <li>
+                                        <strong>Email:</strong>
+                                        <a href="mailto:info@softverses.com">info@softverses.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download">
+                                <h5>Download</h5>
+                                <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                                <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                    </div>
+                    <div class="col-md-6 text-right link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms & conditions</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -182,4 +438,5 @@
     <script src="{% static 'js/bootsnav.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 </body>
+
 </html>

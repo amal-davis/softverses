@@ -346,7 +346,7 @@
                                 <p>
                                     Our web hosting solutions ensure reliable online presence, supporting your website's performance and availability.
                                 </p>
-                                <a class="btn-standard" href="#">Read More</a>
+                                <a class="btn-standard" href="{% url 'web_hosting' %}">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -402,7 +402,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="thumb">
-                                    <img src="" alt="Thumb">
+                                    <img src="{% static 'images/akhil_image.png' %}" alt="Thumb">
                                     <i class="fas fa-quote-right"></i>
                                 </div>
                             </div>
@@ -430,7 +430,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="thumb">
-                                    <img src="" alt="Thumb">
+                                    <img src="{% static 'images/Amal_Image.png' %}" alt="Thumb">
                                     <i class="fas fa-quote-right"></i>
                                 </div>
                             </div>
@@ -453,34 +453,7 @@
                         </div>
                     </div>
                     <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="thumb">
-                                    <img src="" alt="Thumb">
-                                    <i class="fas fa-quote-right"></i>
-                                </div>
-                            </div>
-                            <div class="info col-lg-7">
-                                <p>
-                                    Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
-                                </p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <div class="provider">
-                                    <h4>Adam Jones</h4>
-                                    <span>Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+                    
                 </div>
             </div>
         </div>
@@ -848,7 +821,7 @@
                                     <a href="{% url 'social_media_management' %}">SocialMedia Management</a>
                                 </li>
                                 <li>
-                                    <a href="#">Web Hosting</a>
+                                    <a href="{% url 'web_hosting' %}">Web Hosting</a>
                                 </li>
                             </ul>
                         </div>

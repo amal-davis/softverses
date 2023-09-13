@@ -441,10 +441,10 @@
             <div class="team-items text-center">
                 <div class="row">
                     <!-- Sngle Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class="single-item col-sm-6 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="" alt="Thumb">
+                                <img src="{% static 'images/akhil_image.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -469,10 +469,10 @@
                     </div>
                     <!-- End Sngle Item -->
                     <!-- Sngle Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class="single-item col-sm-6 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="" alt="Thumb">
+                                <img src="{% static 'images/Amal_Image.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle-2" class="share-toggle" hidden>
                                     <label for="toggle-2" class="share-button">
@@ -496,34 +496,7 @@
                         </div>
                     </div>
                     <!-- End Sngle Item -->
-                    <!-- Sngle Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle-3" class="share-toggle" hidden>
-                                    <label for="toggle-3" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Turka Pruda</h4>
-                                <span>CEO, Co-Founder</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Sngle Item -->
+                    
                 </div>
             </div>
         </div>
@@ -599,7 +572,7 @@
                                     <a href="{% url 'social_media_management' %}">SocialMedia Management</a>
                                 </li>
                                 <li>
-                                    <a href="#">Web Hosting</a>
+                                    <a href="{% url 'web_hosting' %}">Web Hosting</a>
                                 </li>
                             </ul>
                         </div>
