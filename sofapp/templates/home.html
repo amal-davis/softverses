@@ -332,7 +332,7 @@
                                 <p>
                                     Our social media management service enhances your online presence, connecting with your audience and elevating market influence.
                                 </p>
-                                <a class="btn-standard" href="#">Read More</a>
+                                <a class="btn-standard" href="{% url 'social_media_management' %}">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -381,85 +381,91 @@
 
     <!-- End Our design section -->
 
-    <!-- Start Testimonials 
+    <!-- Start Work Process 
     ============================================= -->
-    <div class="testimonials-area carousel-shadow default-padding">
+    <div class="work-process-area overflow-hidden default-padding bottom-less">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4>Testimonials</h4>
-                        <h2>What People Say</h2>
+                        <h4>Process</h4>
+                        <h2>How we works</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="testimonial-items">
-                <div class="testimonial-carousel owl-carousel owl-theme">
+        <div class="container-full">
+            <div class="work-pro-items">
+                <div class="row">
                     <!-- Single Item -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="thumb">
-                                    <img src="{% static 'images/akhil_image.png' %}" alt="Thumb">
-                                    <i class="fas fa-quote-right"></i>
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="item-inner">
+                                <div class="icon">
+                                    <img src="{% static 'images/Choose-service-icon.png' %}" alt="">
+                                    <span>01</span>
                                 </div>
-                            </div>
-                            <div class="info col-lg-7">
+                                <h5>Choose a Service</h5>
                                 <p>
-                                    Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
+                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
                                 </p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <div class="provider">
-                                    <h4>Ocean Babs</h4>
-                                    <span>Head of IT</span>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="thumb">
-                                    <img src="{% static 'images/Amal_Image.png' %}" alt="Thumb">
-                                    <i class="fas fa-quote-right"></i>
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="item-inner">
+                                <div class="icon">
+                                    <img src="{% static 'images/meeting-icon.png' %}" alt="meeting-icon">
+                                    <span>02</span>
                                 </div>
-                            </div>
-                            <div class="info col-lg-7">
+                                <h5>Request a Meeting</h5>
                                 <p>
-                                    Excited main sixteen parties. direction has led immediate. Law gate her well bed life feet seen rent per instructions!
+                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
                                 </p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <div class="provider">
-                                    <h4>Hundi Monas</h4>
-                                    <span>Marketing</span>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Single Item -->
-                    
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="item-inner">
+                                <div class="icon">
+                                    <img src="{% static 'images/planing-icon.png' %}" alt="">
+                                    <span>03</span>
+                                </div>
+                                <h5>Receive Custom Plan</h5>
+                                <p>
+                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="item-inner">
+                                <div class="icon">
+                                    <img src="{% static 'images/Project-rocket-icon.png' %}" alt="">
+                                    <span>04</span>
+                                </div>
+                                <h5>Let’s Make it Happen</h5>
+                                <p>
+                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Testimonials Area -->
-
+    <!-- End Work Process Area -->
     <!-- Start Faq 
     ============================================= -->
     <div class="faq-area default-padding bg-gray">
@@ -470,7 +476,6 @@
                     <div class="col-lg-5 info">
                         <h5>faq</h5>
                         <h2>Most common question about our services</h2>
-                        <a class="btn btn-theme effect btn-md">Viewl All</a>
                     </div>
 
                     <div class="col-lg-7">
