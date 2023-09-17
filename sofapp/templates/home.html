@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softverses - IT Solutions </title>
     <link rel="shortcut icon" href="{% static 'images/tittle-logo.png' %}" type="image/x-icon">
 
-    
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}">
@@ -20,10 +21,10 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
-    
 
 
-  <!-- ========== End Stylesheet ========== -->
+
+    <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +40,7 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
-    
+
     <!-- Header 
     ============================================= -->
     <header id="home">
@@ -58,7 +59,7 @@
                                 <p>Call us today! <strong>+91 8075955676</strong></p>
                             </li>
                         </ul>
-                    </div>        
+                    </div>
                     <!-- End Atribute Navigation -->
 
                     <!-- Start Header Navigation -->
@@ -77,28 +78,28 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                             <li>
-                            <a class="active" href="{% url 'homepage' %}">Home</a>
-                            
-                        </li>
-                        <li >
-                            <a href="{% url 'about_us' %}"  >About Us</a>
-                            
-                        </li>
-                        <li >
-                            <a href="{% url 'service' %}">Services</a>
-                            
-                        </li>
-                        <li>
-                            <a href="{% url 'technology' %}">Technology</a>
-                            
-                        </li>
-                        <li>
-                            <a href="{% url 'blog' %}">Blog</a>
+                                <a class="active" href="{% url 'homepage' %}">Home</a>
 
-                        </li>
-                        <li>
-                            <a href="{% url 'contact' %}">Contact</a>
-                        </li>
+                            </li>
+                            <li>
+                                <a href="{% url 'about_us' %}">About Us</a>
+
+                            </li>
+                            <li>
+                                <a href="{% url 'service' %}">Services</a>
+
+                            </li>
+                            <li>
+                                <a href="{% url 'technology' %}">Technology</a>
+
+                            </li>
+                            <li>
+                                <a href="{% url 'blog' %}">Blog</a>
+
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}">Contact</a>
+                            </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div>
@@ -110,41 +111,46 @@
     </header>
     <!-- End Header -->
 
-   <!-- Start Banner 
+    <!-- Start Banner 
     ============================================= -->
     <div class="banner-area top-pad-60-responsive border-shadow text-center content-less text-large">
-       <!-- Start Video Background -->
-<div class="video-background">
-    <video autoplay muted loop poster="">
-        <source src="{% static 'videos/River_Flowing_Aerial_shot.mp4' %}" type="video/mp4">
-        <!-- You can add multiple source elements for different video formats -->
-    </video>
-    <div class="video-content">
-        <!-- Your content goes here -->
-        <h1  >Creating a better IT solutions</h1>
-        <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md" href="{% url 'contact' %}">Contact Us</a>
-    </div>
-</div>
-<!-- End Video Background -->
- 
+        <!-- Start Video Background -->
+        <div class="video-background">
+            <video autoplay muted loop poster="">
+                <source src="{% static 'videos/River_Flowing_Aerial_shot.mp4' %}" type="video/mp4">
+                <!-- You can add multiple source elements for different video formats -->
+            </video>
+            <div class="video-content">
+                <!-- Your content goes here -->
+                <h1>Expert Web Development Services Await</h1>
+                <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md"
+                    style="margin-top: 20px;" href="{% url 'contact' %}">Get In Touch</a>
+            </div>
+        </div>
+        <!-- End Video Background -->
+
     </div>
     <!-- End Banner -->
-<!-- Start Features Area 
+    <!-- Start Features Area 
     ============================================= -->
     <div class="feature-area half-bg overflow-hidden default-padding-top">
         <div class="container">
             <div class="heading-left">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h5>15 years of experience</h5>
+                        <h5>Providing Best Service</h5>
                         <h2>
-                            Offer The Latest Software And Solutions To Our customers!
+                            Transform Your Online Presence With Stunning Web and Marketing Solutions
                         </h2>
                     </div>
                     <div class="col-lg-6">
                         <p>
-                            Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season.
-                        </p>
+                            Welcome to the forefront of digital excellence, your one-stop destination for expert web
+                            design and
+                            website development services. Our dedicated team specializes in crafting captivating web
+                            experiences that engage and convert visitors. Whether you're seeking top-tier web
+                            development, tailored digital marketing strategies, or exceptional branding services, we've
+                            got you covered. </p>
                     </div>
                 </div>
             </div>
@@ -204,12 +210,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="clients-carousel owl-carousel owl-theme">
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/HTML-logo-grayscale.png' %}" alt="Client"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/css-logo-greyscale.png' %}" alt="Client"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Javascript-logo-greyscale.png' %}" alt="Client"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Django-logo-grayscale.png' %}" alt="Client"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Python-logo-grayscale.png' %}" alt="Client"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/aws-greyscale-logo.png' %}" alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/HTML-logo-grayscale.png' %}"
+                                alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/css-logo-greyscale.png' %}"
+                                alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Javascript-logo-greyscale.png' %}"
+                                alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Django-logo-grayscale.png' %}"
+                                alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Python-logo-grayscale.png' %}"
+                                alt="Client"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/aws-greyscale-logo.png' %}"
+                                alt="Client"></a>
                     </div>
                 </div>
             </div>
@@ -223,24 +235,37 @@
         <div class="container-fluid">
             <div class="who-we-area-box">
                 <div class="row">
-                    <div class="col-lg-6 thumb bg-cover" style="background-image: url('static/images/Mission Vission.png');"></div>
+                    <div class="col-lg-6 thumb bg-cover"
+                        style="background-image: url('static/images/Mission Vission.png');"></div>
                     <div class="col-lg-6 info">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 item">
                                 <h4>Our Mission</h4>
                                 <h2 class="text-blur">Mission</h2>
                                 <p>
-                                    Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
+                                    At softverses, our mission is to empower businesses with the digital tools
+                                    they need to succeed in the modern world. We are dedicated to delivering exceptional
+                                    web development, digital marketing, and branding services that transform online
+                                    potential into tangible results. Our commitment is to be the driving force behind
+                                    our clients' growth, ensuring their digital presence stands out in an ever-evolving
+                                    landscape
                                 </p>
-                                <a class="btn circle btn-light effect btn-sm" href="{% url 'mission_vision' %}">Know More <i class="fas fa-arrow-alt-circle-right"></i></a>
+                                <a class="btn circle btn-light effect btn-sm" href="{% url 'mission_vision' %}">Know
+                                    More <i class="fas fa-arrow-alt-circle-right"></i></a>
                             </div>
                             <div class="col-lg-6 col-md-6 item">
                                 <h4>Our Vision</h4>
                                 <h2 class="text-blur">Vision</h2>
                                 <p>
-                                    Engaged its was evident pleased husband. Ye goodness felicity do the best disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on best circle.
+                                    At softverses, our vision is to revolutionize the digital realm by setting
+                                    new standards of innovation and excellence. We aim to become a globally recognized
+                                    leader in web development, digital marketing, and branding, constantly pushing the
+                                    boundaries of creativity and technology. Our vision is to empower businesses
+                                    worldwide, enabling them to thrive in the digital age through our cutting-edge
+                                    solutions and unwavering commitment to their success
                                 </p>
-                                <a class="btn circle btn-light effect btn-sm" href="{% url 'mission_vision' %}">Know More <i class="fas fa-arrow-alt-circle-right"></i></a>
+                                <a class="btn circle btn-light effect btn-sm" href="{% url 'mission_vision' %}">Know
+                                    More <i class="fas fa-arrow-alt-circle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -263,7 +288,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="service-items text-center">
                 <div class="row">
@@ -274,7 +299,8 @@
                                 <h4>Web Development</h4>
                                 <img src="{% static 'images/Web-development-icon.png' %}" alt="">
                                 <p>
-                                    We offer comprehensive web development services to help you create a dynamic online presence that meets your business needs and engages your audience effectively.
+                                    We offer comprehensive web development services to help you create a dynamic online
+                                    presence that meets your business needs and engages your audience effectively.
                                 </p>
                                 <a class="btn-standard" href="{% url 'web_services' %}">Read More</a>
                             </div>
@@ -289,7 +315,8 @@
                                 <h4>Digital Marketing</h4>
                                 <img src="{% static 'images/Digital-Marketing-Icon.png' %}" alt="">
                                 <p>
-                                    Our digital marketing solutions empower your brand to thrive in the digital landscape, driving growth and connecting with your target audience effectively.
+                                    Our digital marketing solutions empower your brand to thrive in the digital
+                                    landscape, driving growth and connecting with your target audience effectively.
                                 </p>
                                 <a class="btn-standard" href="{% url 'digiatl_marketing' %}">Read More</a>
                             </div>
@@ -303,7 +330,8 @@
                                 <h4>Branding</h4>
                                 <img src="{% static 'images/Branding-Icon.png' %}" alt="">
                                 <p>
-                                    Effective branding elevates your business, strengthening your market presence and forging lasting connections with your audience effectively.                                </p>
+                                    Effective branding elevates your business, strengthening your market presence and
+                                    forging lasting connections with your audience effectively. </p>
                                 <a class="btn-standard" href="{% url 'branding' %}">Read More</a>
                             </div>
                         </div>
@@ -316,7 +344,8 @@
                                 <h4>SEO</h4>
                                 <img src="{% static 'images\SEO_Icon.png' %}" alt="">
                                 <p>
-                                    SEO excellence boosts your online visibility, enhancing market presence and connecting you with your target audience effectively.
+                                    SEO excellence boosts your online visibility, enhancing market presence and
+                                    connecting you with your target audience effectively.
                                 </p>
                                 <a class="btn-standard" href="{% url 'seo' %}">Read More</a>
                             </div>
@@ -330,7 +359,8 @@
                                 <h4>SMM</h4>
                                 <img src="{% static 'images/Social_Media_Management.png' %}" alt="">
                                 <p>
-                                    Our social media management service enhances your online presence, connecting with your audience and elevating market influence.
+                                    Our social media management service enhances your online presence, connecting with
+                                    your audience and elevating market influence.
                                 </p>
                                 <a class="btn-standard" href="{% url 'social_media_management' %}">Read More</a>
                             </div>
@@ -341,10 +371,11 @@
                     <div class="col-lg-4 col-md-6 single-item">
                         <div class="item">
                             <div class="info">
-                                <h4 >Web Hosting</h4>
+                                <h4>Web Hosting</h4>
                                 <img src="{% static 'images/Web-hosting-icon.png' %}" alt="">
                                 <p>
-                                    Our web hosting solutions ensure reliable online presence, supporting your website's performance and availability.
+                                    Our web hosting solutions ensure reliable online presence, supporting your website's
+                                    performance and availability.
                                 </p>
                                 <a class="btn-standard" href="{% url 'web_hosting' %}">Read More</a>
                             </div>
@@ -359,25 +390,25 @@
 
     <!-- Start Our design section 
     ============================================= -->
-    
-<div class="container-fluid">
-    <div class="site-heading text-center">
-        <h4>Our Web Designs</h4>
-        <h2>Various Types Of Designs</h2>
-        
+
+    <div class="container-fluid">
+        <div class="site-heading text-center">
+            <h4>Our Web Designs</h4>
+            <h2>Various Types Of Designs</h2>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/Food-website-responsive-mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+            <div class="col-lg-4 pt-5">
+                <img src="{% static 'images/Phone-Responsive-Mockup.png' %}" alt="web design" class="img-fluid">
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4 pt-5">
-            <img src="{% static 'images/Food-website-responsive-mockup.png' %}" alt="web design" class="img-fluid">
-        </div>
-        <div class="col-lg-4 pt-5">
-            <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="web design" class="img-fluid">
-        </div>
-        <div class="col-lg-4 pt-5">
-            <img src="{% static 'images/Phone-Responsive-Mockup.png' %}" alt="web design" class="img-fluid">
-        </div>
-    </div>
-</div>
 
     <!-- End Our design section -->
 
@@ -389,7 +420,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
                         <h4>Process</h4>
-                        <h2>How we works</h2>
+                        <h2>How It Works Here</h2>
                     </div>
                 </div>
             </div>
@@ -407,7 +438,7 @@
                                 </div>
                                 <h5>Choose a Service</h5>
                                 <p>
-                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                    Select the perfect service for your needs with ease.
                                 </p>
                             </div>
                         </div>
@@ -423,7 +454,7 @@
                                 </div>
                                 <h5>Request a Meeting</h5>
                                 <p>
-                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                    Initiate a conversation by scheduling a meeting with us today.
                                 </p>
                             </div>
                         </div>
@@ -439,7 +470,7 @@
                                 </div>
                                 <h5>Receive Custom Plan</h5>
                                 <p>
-                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                    Once you've shared your goals, we'll create a tailored plan just for you.
                                 </p>
                             </div>
                         </div>
@@ -455,7 +486,7 @@
                                 </div>
                                 <h5>Let’s Make it Happen</h5>
                                 <p>
-                                    Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better. 
+                                    Let's turn your vision into reality together, it's time to make it happen.
                                 </p>
                             </div>
                         </div>
@@ -475,7 +506,7 @@
 
                     <div class="col-lg-5 info">
                         <h5>faq</h5>
-                        <h2>Most common question about our services</h2>
+                        <h2>Most common questions about our services</h2>
                     </div>
 
                     <div class="col-lg-7">
@@ -483,43 +514,55 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
-                                        <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              <strong>?</strong> Do I need a business plan
+                                        <h4 class="mb-0" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>?</strong> What services do you offer at softverses?
                                         </h4>
                                     </div>
 
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
-                                                Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be. Cause heard fat above first time achivement.
+                                                We offer a comprehensive suite of services, including web development,
+                                                digital marketing, and branding, designed to enhance your online
+                                                presence and drive business growth.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
-                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              <strong>?</strong> How long should a business plan be
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <strong>?</strong>How do I know which service is right for my business?
                                         </h4>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
-                                                Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be. Cause heard fat above first time achivement.
+                                                Our experienced team will work closely with you to assess your needs and
+                                                objectives, ensuring we recommend the most suitable service to achieve
+                                                your goals.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingFour">
-                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                          <strong>?</strong> Where do I start
-                                      </h4>
+                                        <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <strong>?</strong> What sets softverses apart from other digital agencies?
+                                        </h4>
                                     </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
                                         <div class="card-body">
                                             <p>
-                                                Continue building numerous of at relation in margaret. Lasted engage roused mother an am at. Other early while if by do to. Missed living excuse as be. Cause heard fat above first time achivement.
+                                                We stand out through our commitment to excellence, innovative solutions,
+                                                and a proven track record of delivering results. Our holistic approach
+                                                ensures your brand's success in the digital landscape.
                                             </p>
                                         </div>
                                     </div>
@@ -640,21 +683,24 @@
                 <div class="col-lg-6 contact-form-box">
                     <div class="content">
                         <div class="heading">
-                            <h2>Need Help?</h2>
-                            <p>Reach out to the world’s most reliable IT services.</p>
+                            <h2>Reach Us Here</h2>
+                            <p>Reach us Out To Get A Quote</p>
                         </div>
-                        <form action="{% url 'contact_home_details' %}" method="post" class="contact-form" enctype="multipart/form-data" onsubmit="return false;">
+                        <form action="{% url 'contact_home_details' %}" method="post" class="contact-form"
+                            enctype="multipart/form-data" onsubmit="return false;">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Name"
+                                            type="text">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*"
+                                            type="email">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -662,7 +708,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="tel">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                            type="tel">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -670,7 +717,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="i-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need."></textarea>
+                                        <textarea class="form-control" id="comments" name="comments"
+                                            placeholder="Please describe what you need."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -681,13 +729,13 @@
                                     </button>
                                 </div>
                             </div>
-                            
+
                         </form>
                     </div>
                     <!-- Alert Message -->
 
-                            
-<div id="message" class="alert-msg" style="color: #6000ff;"></div>
+
+                    <div id="message" class="alert-msg" style="color: #6000ff;"></div>
 
                 </div>
 
@@ -717,7 +765,7 @@
                                         <div class="info">
                                             <p>
                                                 Our Location
-                                                <span>Alexima, NT 456678</span>
+                                                <span>Thrissur,Kerala</span>
                                             </p>
                                         </div>
                                     </li>
@@ -739,14 +787,15 @@
                                         <div class="info">
                                             <p>
                                                 Call Us
-                                                <span>+456 456 4443</span>
+                                                <span>+91 8075955676</span>
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div id="tab2" class="tab-pane fade">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
                             </div>
                         </div>
                     </div>
@@ -772,12 +821,14 @@
                         <div class="f-item about">
                             <img src="{% static 'images/white_logo.png' %}" alt="Logo">
                             <p>
-                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new.
+                                Discover a full spectrum of services at softverses, where we excel in web
+                                development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -863,14 +914,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
                                 <a href="#">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
                                 <a href="#">Support</a>
                             </li>
@@ -882,7 +933,7 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
-    
+
 
 
 
@@ -891,7 +942,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-    
+
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -912,63 +963,64 @@
     <script src="{% static 'js/main.js' %}"></script>
 
     <script>
-     
-$(document).ready(function () {
-    $("form.contact-form").on("submit", function () {
-        var formData = new FormData($(this)[0]);
 
-        $.ajax({
-            type: "POST",
-            url: $(this).attr("action"),
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                // Display the success message in a browser-native alert
-                alert(data.success_message);
+        $(document).ready(function () {
+            $("form.contact-form").on("submit", function () {
+                var formData = new FormData($(this)[0]);
 
-                // Optionally, you can reset the form
-                $("form.contact-form")[0].reset();
-            },
-            error: function (xhr, status, error) {
-                // Handle errors here
-                console.error(xhr.responseText);
-            },
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in a browser-native alert
+                        alert(data.success_message);
+
+                        // Optionally, you can reset the form
+                        $("form.contact-form")[0].reset();
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+
+                return false; // Prevent the default form submission
+            });
         });
 
-        return false; // Prevent the default form submission
-    });
-});
 
+        $(document).ready(function () {
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
 
-$(document).ready(function () {
-    $("#subscribe-form").on("submit", function (e) {
-        e.preventDefault(); // Prevent the default form submission behavior
+                var formData = new FormData($(this)[0]);
 
-        var formData = new FormData($(this)[0]);
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
 
-        $.ajax({
-            type: "POST",
-            url: $(this).attr("action"),
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                // Display the success message in an alert pop-up
-                alert(data.success_message);
-
-                // Optionally, you can clear the input field
-                $("#subscribe-form input[name='email']").val('');
-            },
-            error: function (xhr, status, error) {
-                // Handle errors here
-                console.error(xhr.responseText);
-            },
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
         });
-    });
-});
 
     </script>
 
 </body>
+
 </html>

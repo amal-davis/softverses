@@ -1962,8 +1962,7 @@ video {
 .video-content h1{
   color: #fff;
   font-weight: 600;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+ 
   line-height: 1.4;
   position: relative;
   display: inline-block;
@@ -1972,7 +1971,14 @@ video {
 @media(max-width:500px){
   .video-content h1{
     font-size: 36px;
-    line-height: 60px;
+    line-height: 50px;
+    position: relative;
+    top: -90px;
+    font-size: 34px;
+  }
+  .video-content a{
+   position: relative;
+   bottom: 60px;
   }
 }
 /* Content */
@@ -4005,6 +4011,9 @@ video {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .work-process-area .work-pro-items .item p {
