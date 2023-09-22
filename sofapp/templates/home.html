@@ -122,8 +122,14 @@
             </video>
             <div class="video-content">
                 <!-- Your content goes here -->
-                <h1>Expert Web Development Services Await</h1>
-                <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md"
+                <h1 class="fade-in">
+                    <span class="word">Expert</span>
+                    <span class="word">Web</span>
+                    <span class="word">Development</span>
+                    <span class="word">Services</span>
+                    <span class="word">Await</span>
+                  </h1>                
+                  <a data-animation="animated fadeInUp" class="btn circle btn-light border btn-md"
                     style="margin-top: 20px;" href="{% url 'contact' %}">Get In Touch</a>
             </div>
         </div>
@@ -919,7 +925,7 @@
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
-                                <a href="#">Terms & conditions</a>
+                                <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
 
                             <li>

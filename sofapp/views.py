@@ -83,7 +83,7 @@ def contact_details(request):
          'message from'+ message_name, # Subject
          message + '\n from email:' + messaage_email + '\n Phone Number:' + message_phnnum, # Message
          messaage_email, # From email
-         ['akhilakd5299@gmail.com']   # To email
+         ['info@softverses.com']   # To email
         )
         mail = Contact_details(name=message_name,phone_no=message_phnnum,email=messaage_email,message=message)
         mail.save()
@@ -103,9 +103,9 @@ def contact_home_details(request):
 
         send_mail(
          'message from'+ message_name, # Subject
-         message + '\n from email:' + messaage_email + '\n Phone Number:' + message_phnnum, # Message
+         message + '\n from email:\n' + messaage_email + '\n Phone Number:' + message_phnnum, # Message
          messaage_email, # From email
-         ['akhilakd5299@gmail.com']   # To email
+         ['info@softverses.com']   # To email
         )
         mail = Contact_details(name=message_name,phone_no=message_phnnum,email=messaage_email,message=message)
         mail.save()
@@ -123,7 +123,7 @@ def email_subscribe_home(request):
         subscribe_email = request.POST['email']
 
         # Specify the recipient email address (you can have multiple recipients)
-        recipient_list = ['akhilakd5299@gmail.com']
+        recipient_list = ['info@softverses.com']
 
         send_mail(
             'Subscription Email ID',
