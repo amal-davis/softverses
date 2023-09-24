@@ -403,9 +403,8 @@
                                 </ul>
                             </div>
                             <div class="download">
-                                <h5>Download</h5>
-                                <a href="#"><i class="fab fa-apple"></i> App Store</a>
-                                <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                                <h5>Payment Accepted</h5>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -499,32 +498,32 @@
    });
 
 
-   $(document).ready(function () {
-    $("form.contact-form").on("submit", function () {
-        var formData = new FormData($(this)[0]);
+//    $(document).ready(function () {
+//     $("form.contact-form").on("submit", function () {
+//         var formData = new FormData($(this)[0]);
 
-        $.ajax({
-            type: "POST",
-            url: $(this).attr("action"),
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                // Display the success message in a browser-native alert
-                alert(data.success_message);
+//         $.ajax({
+//             type: "POST",
+//             url: $(this).attr("action"),
+//             data: formData,
+//             processData: false,
+//             contentType: false,
+//             success: function (data) {
+//                 // Display the success message in a browser-native alert
+//                 alert(data.success_message);
 
-                // Optionally, you can reset the form
-                $("form.contact-form")[0].reset();
-            },
-            error: function (xhr, status, error) {
-                // Handle errors here
-                console.error(xhr.responseText);
-            },
-        });
+//                 // Optionally, you can reset the form
+//                 $("form.contact-form")[0].reset();
+//             },
+//             error: function (xhr, status, error) {
+//                 // Handle errors here
+//                 console.error(xhr.responseText);
+//             },
+//         });
 
-        return false; // Prevent the default form submission
-    });
-});
+//         return false; // Prevent the default form submission
+//     });
+// });
    </script>
 
 

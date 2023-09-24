@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% load static %}
 
@@ -24,6 +25,22 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
 </head>
+<style>
+    #terms-content ul {
+        list-style-type: disc;
+        /* Use disc bullets for the list items */
+        padding-left: 20px;
+        /* Add space to the left of the list items */
+    }
+
+    /* Style the list items */
+    #terms-content li {
+        font-size: 16px;
+        /* Adjust the font size as needed */
+        margin-bottom: 10px;
+        /* Add space between list items */
+    }
+</style>
 
 <body>
     <!-- Preloader Start -->
@@ -122,7 +139,7 @@
 
                         </li>
                         <li>
-                            <a  href="{% url 'service' %}">Services</a>
+                            <a href="{% url 'service' %}">Services</a>
 
                         </li>
                         <li>
@@ -157,6 +174,19 @@
         </div>
     </div>
 
+    <div class="container">
+        <div id="terms-content">
+            <ul>
+                <li>The website, designs, graphics and any programming code remain the property of softverses until
+                    all outstanding accounts are paid in full or unless mutually agreed upon.</li>
+                <li>Suspendisse nec justo euismod, vulputate augue at, cursus libero.</li>
+                <li>Phasellus vestibulum purus nec vehicula tincidunt.</li>
+                <!-- Add more list items as needed -->
+            </ul>
+        </div>
+    </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -184,4 +214,5 @@
 
 
 </body>
+
 </html>

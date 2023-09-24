@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+<style>
+    /* styles.css */
+
+/* Center the container div vertically and horizontally */
+.center-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* 100% of the viewport height to center within the viewport */
+}
+
+/* Style the heading and subheading */
+#thankyou-message {
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Specify your desired font family */
+}
+
+#thankyou-message h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add space between the heading and subheading */
+}
+
+#thankyou-message h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #666; /* Specify the desired text color */
+}
+
+</style>
+<body>
+    <div class="center-content">
+        <div id="thankyou-message">
+            <h1>Thank You</h1>
+            <h2>We will get back to you soon</h2>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.history.back(); // Go back to the previous page
+        }, 5000); // Redirect after 5 seconds (5000 milliseconds)
+    </script>
+</body>
+</html>

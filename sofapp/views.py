@@ -72,6 +72,10 @@ def web_hosting(request):
     return render(request,'web_hosting.html')
 
 
+def thankyou_page(request):
+    return render(request,'thankyou.html')
+
+
 def contact_details(request):
     if request.method == 'POST':
         message_name = request.POST['name']
@@ -87,11 +91,7 @@ def contact_details(request):
         )
         mail = Contact_details(name=message_name,phone_no=message_phnnum,email=messaage_email,message=message)
         mail.save()
-
-        success_message = "We will get back to you soon."
-        return render(request,'contact.html',{'message_name':message_name,'success_message': success_message})
-    else:
-       return redirect('contact')
+        return redirect('thankyou_page')
 
 
 def contact_home_details(request):
@@ -109,12 +109,7 @@ def contact_home_details(request):
         )
         mail = Contact_details(name=message_name,phone_no=message_phnnum,email=messaage_email,message=message)
         mail.save()
-
-        success_message = "We will get back to you soon."
-        response_data = {'success_message': success_message}
-        return JsonResponse(response_data)
-    else:
-       return redirect('homepage')
+        return redirect('thankyou_page')
     
 
 

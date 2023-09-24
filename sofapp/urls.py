@@ -22,4 +22,5 @@ urlpatterns = [
     path('mission_vision',views.mission_vision,name='mission_vision'),
     path('social_media_management',views.social_media_management,name='social_media_management'),
     path('web_hosting',views.web_hosting,name='web_hosting'),
+    path('thankyou_page',views.thankyou_page,name='thankyou_page'),
 ]
