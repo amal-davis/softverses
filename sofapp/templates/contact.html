@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact</title>
     {% load static %}
     <link rel="shortcut icon" href="{% static 'images/tittle-logo.png' %}" type="image/x-icon">
@@ -18,132 +20,139 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 </head>
+
 <body>
-    
- <!-- Preloader Start -->
- <div class="se-pre-con"></div>
- <!-- Preloader Ends -->
 
- <!-- Start Header Top 
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
  ============================================= -->
- <div class="top-bar-area inc-pad bg-theme text-light">
-     <div class="container">
-         <div class="row align-center">
-             <div class="col-lg-6 info">
-                 <ul>
-                     <li>
-                         <i class="fas fa-map-marker-alt"></i> Thrissur,Kerala
-                     </li>
-                     <li>
-                         <i class="fas fa-envelope-open"></i>info@softverses.com
-                     </li>
-                 </ul>
-             </div>
-             <div class="col-lg-6 text-right item-flex">
-                 <div class="info">
-                     <ul>
-                         <li>
-                             <i class="fas fa-clock"></i> Working Hours: 8:00 AM – 7:45 PM
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="social">
-                     <ul>
-                         <li>
-                             <a href="#">
-                                 <i class="fab fa-facebook-f"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#">
-                                <i class="fab fa-instagram"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#">
-                                 <i class="fab fa-linkedin-in"></i>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- <!-- End Header Top -->
-
-
- <!-- Header 
- ============================================= -->
- <header id="home">
-
-     <!-- Start Navigation -->
-     <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
-
-         <div class="container">
-
-             <!-- Start Atribute Navigation -->
-             <div class="attr-nav inc-border">
-                 <ul>
-                     <li class="contact">
-                        <i class="fas fa-phone"></i>
-                        <p>Call us today! <strong>+91 8075955676</strong></p>
-                    </li>
-                 </ul>
-             </div>        
-             <!-- End Atribute Navigation -->
-
-             <!-- Start Header Navigation -->
-             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                     <i class="fa fa-bars"></i>
-                 </button>
-                 <a class="navbar-brand" href="{% url 'homepage' %}">
-                     <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="softverses-main-logo">
-                 </a>
-             </div>
-<!-- End Header Navigation -->
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li>
-                        <a href="{% url 'homepage' %}">Home</a>
-                        
-                    </li>
-                    <li>
-                        <a href="{% url 'about_us' %}" >About Us</a>
-                        
-                    </li>
-                    <li >
-                        <a href="{% url 'service' %}">Services</a>
-                        
-                    </li>
-                    <li>
-                        <a href="{% url 'technology' %}"  >Technology</a>                           
-                    </li>
-                    <li>
-                        <a href="{% url 'blog' %}">Blog</a>
-
-                    </li>
-                    <li>
-                        <a class="active" href="{% url 'contact' %}">Contact</a>
-
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
+    <div class="top-bar-area inc-pad bg-theme text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Thrissur,Kerala
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i>info@softverses.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i> Working Hours: 8:00 AM – 7:45 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- End Header Top -->
 
-    </nav>
-    <!-- End Navigation -->
 
-</header>
-<!-- End Header -->
+    <!-- Header 
+ ============================================= -->
+    <header id="home">
 
-<!-- Start Breadcrumb 
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav inc-border">
+                    <ul>
+                        <li class="contact">
+                            <i class="fas fa-phone"></i>
+                            <p>Call us today! <strong>+91 8075955676</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage' %}">
+                        <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="softverses-main-logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="{% url 'homepage' %}">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'about_us' %}">About Us</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'service' %}">Services</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'technology' %}">Technology</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blog' %}">Blog</a>
+
+                        </li>
+                        <li>
+                            <a class="active" href="{% url 'contact' %}">Contact</a>
+
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image: url('static/images/contact-us-image.png');">
+    <div class="breadcrumb-area shadow dark bg-fixed text-light"
+        style="background-image: url('static/images/contact-us-image.png');">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6">
@@ -151,8 +160,7 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li><a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a></li>
                         <li class="active">Contact</li>
                     </ul>
                 </div>
@@ -173,18 +181,21 @@
                             <h2>Reach Us Here</h2>
                             <p>Reach us Out To Get A Quote </p>
                         </div>
-                        <form action="{% url 'contact_home_details' %}" method="post" class="contact-form" enctype="multipart/form-data">
+                        <form action="{% url 'contact_home_details' %}" method="post" class="contact-form"
+                            enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                            required>
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required>
+                                        <input class="form-control" id="email" name="email" placeholder="Email*"
+                                            type="email" required>
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -192,7 +203,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="tel">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                            type="tel">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -200,7 +212,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="i-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need." required></textarea>
+                                        <textarea class="form-control" id="comments" name="comments"
+                                            placeholder="Please describe what you need." required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -212,13 +225,13 @@
                                 </div>
                             </div>
                         </form>
-                        
+
                     </div>
                     <!-- Alert Message -->
-{% if success_message %}
-                            
-<div id="message" class="alert-msg">{{ success_message }}</div>
-{% endif %}
+                    {% if success_message %}
+
+                    <div id="message" class="alert-msg">{{ success_message }}</div>
+                    {% endif %}
                 </div>
 
 
@@ -246,7 +259,7 @@
                                         <div class="info">
                                             <p>
                                                 Our Location
-                                                <span>Thrissur,Kerala</span>
+                                                <span>Thrissur,Kerala,680563</span>
                                             </p>
                                         </div>
                                     </li>
@@ -275,7 +288,8 @@
                                 </ul>
                             </div>
                             <div id="tab2" class="tab-pane fade">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
                             </div>
                         </div>
                     </div>
@@ -285,33 +299,36 @@
         </div>
     </div>
     <!-- End Contact Area -->
-<!-- Start Our design section 
+    <!-- Start Our design section 
     ============================================= -->
-    
+
     <div class="container-fluid" style="margin-bottom: 60px;">
         <div class="site-heading text-center">
             <h4>Our Web Designs</h4>
             <h2>Various Types Of Designs</h2>
 
-            
+
         </div>
         <div class="row">
             <div class="col-lg-4 pt-5">
-                <img src="{% static 'images/Food-website-responsive-mockup.png' %}" alt="Food-website-responsive-mockup " class="img-fluid">
+                <img src="{% static 'images/Food-website-responsive-mockup.png' %}"
+                    alt="Food-website-responsive-mockup " class="img-fluid">
             </div>
             <div class="col-lg-4 pt-5">
-                <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="E-commercial_Responsive_Mockup" class="img-fluid">
+                <img src="{% static 'images/E-commercial_Responsive_Mockup.png' %}" alt="E-commercial_Responsive_Mockup"
+                    class="img-fluid">
             </div>
             <div class="col-lg-4 pt-5">
-                <img src="{% static 'images/Phone-Responsive-Mockup.png' %}" alt="Phone-Responsive-Mockup-of contact-area" class="img-fluid">
+                <img src="{% static 'images/Phone-Responsive-Mockup.png' %}"
+                    alt="Phone-Responsive-Mockup-of contact-area" class="img-fluid">
             </div>
         </div>
     </div>
-    
-        <!-- End Our design section -->
-    
 
-<!-- Start Footer 
+    <!-- End Our design section -->
+
+
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light" style="margin-top: 40px;">
         <!-- Fixed Shape -->
@@ -329,10 +346,11 @@
                                 Discover a full spectrum of services at softverses, where we excel in web
                                 development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -394,7 +412,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -404,7 +422,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -417,7 +436,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
@@ -428,7 +447,7 @@
                                 <a href="#">Privacy</a>
                             </li> -->
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -438,19 +457,19 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    
+
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -471,61 +490,62 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script>
         $(document).ready(function () {
-       $("#subscribe-form").on("submit", function (e) {
-           e.preventDefault(); // Prevent the default form submission behavior
-   
-           var formData = new FormData($(this)[0]);
-   
-           $.ajax({
-               type: "POST",
-               url: $(this).attr("action"),
-               data: formData,
-               processData: false,
-               contentType: false,
-               success: function (data) {
-                   // Display the success message in an alert pop-up
-                   alert(data.success_message);
-   
-                   // Optionally, you can clear the input field
-                   $("#subscribe-form input[name='email']").val('');
-               },
-               error: function (xhr, status, error) {
-                   // Handle errors here
-                   console.error(xhr.responseText);
-               },
-           });
-       });
-   });
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
+
+                var formData = new FormData($(this)[0]);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
+
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
+        });
 
 
-//    $(document).ready(function () {
-//     $("form.contact-form").on("submit", function () {
-//         var formData = new FormData($(this)[0]);
+        //    $(document).ready(function () {
+        //     $("form.contact-form").on("submit", function () {
+        //         var formData = new FormData($(this)[0]);
 
-//         $.ajax({
-//             type: "POST",
-//             url: $(this).attr("action"),
-//             data: formData,
-//             processData: false,
-//             contentType: false,
-//             success: function (data) {
-//                 // Display the success message in a browser-native alert
-//                 alert(data.success_message);
+        //         $.ajax({
+        //             type: "POST",
+        //             url: $(this).attr("action"),
+        //             data: formData,
+        //             processData: false,
+        //             contentType: false,
+        //             success: function (data) {
+        //                 // Display the success message in a browser-native alert
+        //                 alert(data.success_message);
 
-//                 // Optionally, you can reset the form
-//                 $("form.contact-form")[0].reset();
-//             },
-//             error: function (xhr, status, error) {
-//                 // Handle errors here
-//                 console.error(xhr.responseText);
-//             },
-//         });
+        //                 // Optionally, you can reset the form
+        //                 $("form.contact-form")[0].reset();
+        //             },
+        //             error: function (xhr, status, error) {
+        //                 // Handle errors here
+        //                 console.error(xhr.responseText);
+        //             },
+        //         });
 
-//         return false; // Prevent the default form submission
-//     });
-// });
-   </script>
+        //         return false; // Prevent the default form submission
+        //     });
+        // });
+    </script>
 
 
 </body>
+
 </html>

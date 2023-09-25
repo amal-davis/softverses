@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
+    <!-- Event snippet for softverses conversion conversion page --> 
+    <script> gtag('event', 'conversion', {'send_to': 'AW-11271054553/kaDGCLq6pOUYENnJuv4p'}); </script>
 </head>
 <style>
     /* styles.css */
 
-/* Center the container div vertically and horizontally */
-.center-content {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* 100% of the viewport height to center within the viewport */
-}
+    /* Center the container div vertically and horizontally */
+    .center-content {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 100vh;
+        /* 100% of the viewport height to center within the viewport */
+    }
 
-/* Style the heading and subheading */
-#thankyou-message {
-    text-align: center; /* Center-align text */
-    font-family: Arial, sans-serif; /* Specify your desired font family */
-}
+    /* Style the heading and subheading */
+    #thankyou-message {
+        text-align: center;
+        /* Center-align text */
+        font-family: Arial, sans-serif;
+        /* Specify your desired font family */
+    }
 
-#thankyou-message h1 {
-    font-size: 36px; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add space between the heading and subheading */
-}
+    #thankyou-message h1 {
+        font-size: 36px;
+        /* Adjust the font size as needed */
+        margin-bottom: 10px;
+        /* Add space between the heading and subheading */
+    }
 
-#thankyou-message h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #666; /* Specify the desired text color */
-}
-
+    #thankyou-message h2 {
+        font-size: 24px;
+        /* Adjust the font size as needed */
+        color: #666;
+        /* Specify the desired text color */
+    }
 </style>
+
 <body>
     <div class="center-content">
         <div id="thankyou-message">
@@ -44,9 +58,10 @@
     </div>
 
     <script>
-        setTimeout(function() {
+        setTimeout(function () {
             window.history.back(); // Go back to the previous page
         }, 5000); // Redirect after 5 seconds (5000 milliseconds)
     </script>
 </body>
+
 </html>

@@ -3964,6 +3964,9 @@ video {
   display: flex;
   background: #ffffff;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .choose-us-area .items-box {
@@ -4458,6 +4461,9 @@ video {
   position: relative;
   z-index: 1;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .thumb-services-area .services-items .item .icon {

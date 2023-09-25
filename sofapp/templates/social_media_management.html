@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 </head>
 <style>
     /* Custom CSS to remove card border */
@@ -27,6 +30,7 @@
         border: none;
     }
 </style>
+
 <body>
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
@@ -58,17 +62,19 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -207,8 +213,8 @@
             <div class="col-lg-3 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img src="{% static 'images/Social-media-marketing_Target_Audience.png' %}"
-                            class="img-fluid" alt="Social-media-marketing_Target_Audience_image">
+                        <img src="{% static 'images/Social-media-marketing_Target_Audience.png' %}" class="img-fluid"
+                            alt="Social-media-marketing_Target_Audience_image">
 
                     </div>
                     <div class="card-body">
@@ -248,7 +254,7 @@
                                 digital strategies. It involves a deep dive into the performance metrics of social media
                                 campaigns, dissecting data to uncover insights. Social media marketers scrutinize
                                 engagement rates, click-through rates, conversion metrics, and audience demographics to
-                                assess what's working and what needs refinement. 
+                                assess what's working and what needs refinement.
                             </p>
                         </div>
                     </div>
@@ -281,11 +287,11 @@
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 
-<!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light" style="margin-top: 40px;">
         <!-- Fixed Shape -->
@@ -369,7 +375,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -379,7 +385,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -399,9 +406,9 @@
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>

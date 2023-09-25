@@ -22,6 +22,10 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
+
 
 
 
@@ -33,46 +37,52 @@
 </head>
 <style>
     .equal-height-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
-.equal-height-card .position-relative {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; /* Adjust the padding as needed to control the spacing at the top and bottom */
-  position: relative;
-  cursor: pointer;
-}
+    .equal-height-card .position-relative {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        /* Adjust the padding as needed to control the spacing at the top and bottom */
+        position: relative;
+        cursor: pointer;
+    }
 
-.image-container {
-  position: relative;
-  width: 100px; /* Adjust the width of the small image as needed */
-}
+    .image-container {
+        position: relative;
+        width: 100px;
+        /* Adjust the width of the small image as needed */
+    }
 
-.small-image {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%; /* Limit image height to container height */
-  filter: grayscale(100%); /* Convert the image to grayscale by default */
-  transition: filter 0.3s ease; /* Add a transition effect for a smooth hover effect */
-}
+    .small-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        /* Limit image height to container height */
+        filter: grayscale(100%);
+        /* Convert the image to grayscale by default */
+        transition: filter 0.3s ease;
+        /* Add a transition effect for a smooth hover effect */
+    }
 
-.original-image {
-  display: none; /* Hide the original color image by default */
-}
+    .original-image {
+        display: none;
+        /* Hide the original color image by default */
+    }
 
-.equal-height-card:hover .small-image {
-  filter: grayscale(0%); /* Restore the original color when hovering over the card */
-}
+    .equal-height-card:hover .small-image {
+        filter: grayscale(0%);
+        /* Restore the original color when hovering over the card */
+    }
 
-.card-body {
-  flex-grow: 0;
-}
-
+    .card-body {
+        flex-grow: 0;
+    }
 </style>
 
 <body>
@@ -108,17 +118,19 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -208,8 +220,7 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li><a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a></li>
                         <li class="active">Technology</li>
                     </ul>
                 </div>
@@ -224,7 +235,8 @@
                 <div class="card equal-height-card">
                     <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/Django_logo.png' %}" class="small-image grayscale" alt="Django-logo-grayscale-image">
+                            <img src="{% static 'images/Django_logo.png' %}" class="small-image grayscale"
+                                alt="Django-logo-grayscale-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/Django_logo.png' %}" alt="Django_logo_image">
@@ -246,7 +258,8 @@
                 <div class="card equal-height-card">
                     <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/AWS_Logo.png' %}" class="small-image grayscale" alt="aws-greyscale-logo-image">
+                            <img src="{% static 'images/AWS_Logo.png' %}" class="small-image grayscale"
+                                alt="aws-greyscale-logo-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/AWS_Logo.png' %}" alt="AWS_Logo_image">
@@ -267,7 +280,8 @@
                 <div class="card equal-height-card">
                     <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/Python_logo.png' %}" class="small-image grayscale" alt="Python-logo-grayscale-image">
+                            <img src="{% static 'images/Python_logo.png' %}" class="small-image grayscale"
+                                alt="Python-logo-grayscale-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/Python_logo.png' %}" alt="Python_logo_image">
@@ -285,15 +299,16 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                <div class="position-relative d-flex justify-content-center align-items-center">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/HTM_Logo.png' %}" class="small-image grayscale" alt="HTML-logo-grayscale-image">
+                            <img src="{% static 'images/HTM_Logo.png' %}" class="small-image grayscale"
+                                alt="HTML-logo-grayscale-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/HTM_Logo.png' %}" alt="HTM_Logo_image">
                         </div>
-                    </div>                   
-                     <div class="card-body">
+                    </div>
+                    <div class="card-body">
                         <p class="card-text text-center">HyperText Markup Language is the computer language that
                             facilitates website creation. The language, which has code words and syntax just like any
                             other language, is relatively easy to comprehend and, as time goes on, increasingly powerful
@@ -303,15 +318,16 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                        <div class="position-relative d-flex justify-content-center align-items-center">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/CSS_logo.png' %}" class="small-image grayscale" alt="css-logo-greyscale-image">
+                            <img src="{% static 'images/CSS_logo.png' %}" class="small-image grayscale"
+                                alt="css-logo-greyscale-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/CSS_logo.png' %}" alt="CSS_logo_image">
                         </div>
-                    </div>                    
-                     <div class="card-body">
+                    </div>
+                    <div class="card-body">
                         <p class="card-text text-center">CSS stands for Cascading Style Sheets. It is a style sheet
                             language which is used to describe the look and formatting of a document written in markup
                             language. It provides an additional feature to HTML. It is generally used with HTML to
@@ -321,14 +337,15 @@
             </div>
             <div class="col-lg-6 col-md-6 single-item pt-5">
                 <div class="card equal-height-card">
-                       <div class="position-relative d-flex justify-content-center align-items-center">
+                    <div class="position-relative d-flex justify-content-center align-items-center">
                         <div class="image-container">
-                            <img src="{% static 'images/Javascript_logo.png' %}" class="small-image grayscale" alt="Javascript-logo-greyscale-image">
+                            <img src="{% static 'images/Javascript_logo.png' %}" class="small-image grayscale"
+                                alt="Javascript-logo-greyscale-image">
                         </div>
                         <div class="original-image">
                             <img src="{% static 'images/Javascript_logo.png' %}" alt="Javascript_logo_image">
                         </div>
-                    </div>         
+                    </div>
                     <div class="card-body">
                         <p class="card-text text-center">JavaScript is a scripting or programming language that allows
                             you to implement complex features on web pages — every time a web page does more than just
@@ -358,10 +375,11 @@
                                 Discover a full spectrum of services at softverses, where we excel in web
                                 development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -423,7 +441,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -433,7 +451,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -453,9 +472,9 @@
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -491,33 +510,33 @@
 
     <script>
         $(document).ready(function () {
-       $("#subscribe-form").on("submit", function (e) {
-           e.preventDefault(); // Prevent the default form submission behavior
-   
-           var formData = new FormData($(this)[0]);
-   
-           $.ajax({
-               type: "POST",
-               url: $(this).attr("action"),
-               data: formData,
-               processData: false,
-               contentType: false,
-               success: function (data) {
-                   // Display the success message in an alert pop-up
-                   alert(data.success_message);
-   
-                   // Optionally, you can clear the input field
-                   $("#subscribe-form input[name='email']").val('');
-               },
-               error: function (xhr, status, error) {
-                   // Handle errors here
-                   console.error(xhr.responseText);
-               },
-           });
-       });
-   });
-   </script>
-   
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
+
+                var formData = new FormData($(this)[0]);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
+
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
+        });
+    </script>
+
 
 </body>
 

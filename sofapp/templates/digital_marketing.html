@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 
 </head>
 <style>
@@ -63,17 +66,19 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -170,7 +175,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card ">
                     <div class="card-image text-center">
-                        <img src="{% static 'images/content_marketing_icon.png' %}" class="img-fluid" alt="Content-Marketing-icon-images">
+                        <img src="{% static 'images/content_marketing_icon.png' %}" class="img-fluid"
+                            alt="Content-Marketing-icon-images">
 
                     </div>
                     <div class="card-body">
@@ -192,7 +198,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img class="img-fluid" src="{% static 'images/Social-media-marketing.png' %}" alt="social media marketing-icon-images">
+                        <img class="img-fluid" src="{% static 'images/Social-media-marketing.png' %}"
+                            alt="social media marketing-icon-images">
 
                     </div>
                     <div class="card-body">
@@ -214,7 +221,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img src="{% static 'images/Email_Marketing_Icon.png' %}" class="img-fluid" alt="Email marketing icon-images">
+                        <img src="{% static 'images/Email_Marketing_Icon.png' %}" class="img-fluid"
+                            alt="Email marketing icon-images">
 
                     </div>
                     <div class="card-body">
@@ -235,7 +243,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img class="img-fluid" src="{% static 'images/Affiliate_Marketing_icon.png' %}" alt="Affliate Marketing-icon-images">
+                        <img class="img-fluid" src="{% static 'images/Affiliate_Marketing_icon.png' %}"
+                            alt="Affliate Marketing-icon-images">
 
                     </div>
                     <div class="card-body">
@@ -257,7 +266,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img class="img-fluid" src="{% static 'images/Advertismenent_icon.png' %}" alt="Advertisment Icon-icon-images">
+                        <img class="img-fluid" src="{% static 'images/Advertismenent_icon.png' %}"
+                            alt="Advertisment Icon-icon-images">
 
                     </div>
                     <div class="card-body">
@@ -281,7 +291,8 @@
             <div class="col-lg-4 col-md-6 single-item">
                 <div class="card">
                     <div class="card-image text-center">
-                        <img class="img-fluid" src="{% static 'images/Influencers_icon.png' %}" alt="Influencer Marketing icon-images">
+                        <img class="img-fluid" src="{% static 'images/Influencers_icon.png' %}"
+                            alt="Influencer Marketing icon-images">
 
                     </div>
                     <div class="card-body">
@@ -303,7 +314,7 @@
         </div>
     </div>
 
-<!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
@@ -321,10 +332,11 @@
                                 Discover a full spectrum of services at softverses, where we excel in web
                                 development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -386,7 +398,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -396,7 +408,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -409,16 +422,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -451,35 +464,35 @@
     <script src="{% static 'js/bootsnav.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
-<script>
-    $(document).ready(function () {
-       $("#subscribe-form").on("submit", function (e) {
-           e.preventDefault(); // Prevent the default form submission behavior
-   
-           var formData = new FormData($(this)[0]);
-   
-           $.ajax({
-               type: "POST",
-               url: $(this).attr("action"),
-               data: formData,
-               processData: false,
-               contentType: false,
-               success: function (data) {
-                   // Display the success message in an alert pop-up
-                   alert(data.success_message);
-   
-                   // Optionally, you can clear the input field
-                   $("#subscribe-form input[name='email']").val('');
-               },
-               error: function (xhr, status, error) {
-                   // Handle errors here
-                   console.error(xhr.responseText);
-               },
-           });
-       });
-   });
+    <script>
+        $(document).ready(function () {
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
 
-</script>
+                var formData = new FormData($(this)[0]);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
+
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
+        });
+
+    </script>
 
 </body>
 

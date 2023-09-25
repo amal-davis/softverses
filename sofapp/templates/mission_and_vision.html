@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 
 </head>
 
@@ -39,7 +42,7 @@
                             <i class="fas fa-map-marker-alt"></i> Thrissur,Kerala
                         </li>
                         <li>
-                            <i class="fas fa-envelope-open"></i> Info@gmail.com
+                            <i class="fas fa-envelope-open"></i>info@softverses.com
                         </li>
                     </ul>
                 </div>
@@ -54,17 +57,19 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -146,7 +151,8 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image:  url('static/images/Mission_Vission_Cover.png');">
+    <div class="breadcrumb-area shadow dark bg-fixed text-light"
+        style="background-image:  url('static/images/Mission_Vission_Cover.png');">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6">
@@ -154,9 +160,8 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li class="active">Contact</li>
+                        <li><a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Mission and Vision</li>
                     </ul>
                 </div>
             </div>
@@ -177,17 +182,22 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 pt-5">
-                <p>In conclusion, developing a specialized company website highlighting services in the Python Django
-                    stack can be a beneficial strategy to attract a targeted audience and showcase your expertise. Just
-                    be sure to invest in high-quality content, maintain the site regularly, and provide a positive user
-                    experience to maximize its effectiveness.</p>
+                <p>Our mission in the realm of digital services is to catalyze and streamline the digital transformation
+                    journey for our clients. We are dedicated to providing innovative solutions that harness the power
+                    of technology to solve complex problems, increase efficiency, and drive growth. Through our digital
+                    marketing expertise, we aim to amplify brand voices, delivering targeted messages to the right
+                    audiences at the right time. We prioritize building strong online identities and cultivating
+                    authentic relationships in the digital landscape, enabling businesses to thrive and adapt in an
+                    ever-evolving digital world. Our mission is to be the catalyst for our clients' digital success,
+                    empowering them with the tools, strategies, and support needed to flourish in an increasingly
+                    interconnected and competitive digital ecosystem.</p>
             </div>
             <div class="col-lg-6 pt-5">
                 <img src="{% static 'images/Mission_Pic.png' %}" class="img-fluid" alt="chess-board-image">
             </div>
         </div>
     </div>
-    
+
     <div class="container" style="margin-top: 40px;">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -202,19 +212,24 @@
         <div class="row">
             <div class="col-lg-6 pt-5">
                 <img src="{% static 'images/Vison_Image.png' %}" class="img-fluid" alt="Goals-plans-action">
- 
+
             </div>
             <div class="col-lg-6 pt-5">
-                <p>In conclusion, developing a specialized company website highlighting services in the Python Django
-                    stack can be a beneficial strategy to attract a targeted audience and showcase your expertise. Just
-                    be sure to invest in high-quality content, maintain the site regularly, and provide a positive user
-                    experience to maximize its effectiveness.</p>
+                <p>Our vision for digital services is rooted in innovation, adaptability, and sustainable progress. We
+                    aspire to be at the forefront of technological advancements, continually pushing boundaries to
+                    provide cutting-edge solutions that anticipate and meet the evolving needs of our clients. We
+                    envision a future where businesses seamlessly integrate digital strategies into their operations,
+                    unlocking new opportunities and efficiencies. Our goal is to lead this transformation, fostering a
+                    digital landscape where every brand has the potential to thrive and make a meaningful impact.
+                    Through our services, we aim to create a world where businesses can harness the full potential of
+                    the digital realm, forging enduring connections with their audiences and achieving sustainable
+                    growth in an increasingly digital-centric world.</p>
             </div>
         </div>
     </div>
-    
 
-     <!-- Start Footer 
+
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light" style="margin-top: 40px;">
         <!-- Fixed Shape -->
@@ -298,7 +313,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -308,7 +323,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -328,9 +344,9 @@
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>

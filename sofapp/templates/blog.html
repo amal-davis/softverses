@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 </head>
 
 <style>
@@ -89,15 +92,19 @@
     .item-text {
         margin-left: 10px;
     }
-    .detail-section {
-    opacity: 0; /* Initially set to be transparent */
-    padding: 10px;
-    transition: opacity 0.5s ease; /* Add a transition for opacity */
-}
 
-.detail-section.active {
-    opacity: 1; /* When active, fade in by setting opacity to 1 */
-}
+    .detail-section {
+        opacity: 0;
+        /* Initially set to be transparent */
+        padding: 10px;
+        transition: opacity 0.5s ease;
+        /* Add a transition for opacity */
+    }
+
+    .detail-section.active {
+        opacity: 1;
+        /* When active, fade in by setting opacity to 1 */
+    }
 
     @media (max-width: 500px) {
         .journal-list {
@@ -181,17 +188,19 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -282,8 +291,7 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li><a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a></li>
                         <li class="active">Blog</li>
                     </ul>
                 </div>
@@ -311,8 +319,8 @@
 
                     <div class="journal-item" data-index="2">
                         <div class="item-content">
-                            <img src="{% static 'images/Digital-marketing-blog-image.png' %}" alt="digiatl_marketing-image"
-                                class="img-fluid">
+                            <img src="{% static 'images/Digital-marketing-blog-image.png' %}"
+                                alt="digiatl_marketing-image" class="img-fluid">
                             <div class="item-text">
                                 <h4>Marketing Statergy In Digital World</h4>
                                 <p class="item-date">Date: September 1, 2023</p>
@@ -322,7 +330,8 @@
                     </div>
                     <div class="journal-item" data-index="3">
                         <div class="item-content">
-                            <img src="{% static 'images/Branding-blog-image.png' %}" alt="branding-image" class="img-fluid">
+                            <img src="{% static 'images/Branding-blog-image.png' %}" alt="branding-image"
+                                class="img-fluid">
                             <div class="item-text">
                                 <h4>Branding Increase Value Of Your Business</h4>
                                 <p class="item-date">Date: September 1, 2023</p>
@@ -378,10 +387,11 @@
                                 Discover a full spectrum of services at softverses, where we excel in web
                                 development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -443,7 +453,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -453,7 +463,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -473,9 +484,9 @@
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -509,75 +520,75 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const listItems = document.querySelectorAll(".journal-item");
-    const detailSections = document.querySelectorAll(".detail-section");
+            const listItems = document.querySelectorAll(".journal-item");
+            const detailSections = document.querySelectorAll(".detail-section");
 
-    // Show details of the first journal by default
-    showDetailSection(1);
+            // Show details of the first journal by default
+            showDetailSection(1);
 
-    listItems.forEach((item) => {
-        item.addEventListener("click", () => {
-            const index = item.getAttribute("data-index");
-            // Hide all detail sections
-            detailSections.forEach(section => {
-                section.classList.remove("active");
+            listItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    const index = item.getAttribute("data-index");
+                    // Hide all detail sections
+                    detailSections.forEach(section => {
+                        section.classList.remove("active");
+                    });
+                    // Show the selected detail section with a delay for the fade-in effect
+                    setTimeout(() => {
+                        showDetailSection(index);
+                    }, 800); // Adjust the delay as needed
+                    setActiveHeading(index);
+                });
             });
-            // Show the selected detail section with a delay for the fade-in effect
-            setTimeout(() => {
-                showDetailSection(index);
-            }, 800); // Adjust the delay as needed
-            setActiveHeading(index);
-        });
-    });
 
-    function showDetailSection(index) {
-        detailSections.forEach(section => {
-            section.style.display = "none";
-        });
+            function showDetailSection(index) {
+                detailSections.forEach(section => {
+                    section.style.display = "none";
+                });
 
-        const selectedDetailSection = document.getElementById(`detailSection${index}`);
-        selectedDetailSection.style.display = "block";
+                const selectedDetailSection = document.getElementById(`detailSection${index}`);
+                selectedDetailSection.style.display = "block";
 
-        // Add the 'active' class to trigger the fade-in effect
-        selectedDetailSection.classList.add("active");
-    }
+                // Add the 'active' class to trigger the fade-in effect
+                selectedDetailSection.classList.add("active");
+            }
 
-    function setActiveHeading(index) {
-        listItems.forEach(item => {
-            if (item.getAttribute("data-index") === index) {
-                item.querySelector("h4").classList.add("active-heading");
-            } else {
-                item.querySelector("h4").classList.remove("active-heading");
+            function setActiveHeading(index) {
+                listItems.forEach(item => {
+                    if (item.getAttribute("data-index") === index) {
+                        item.querySelector("h4").classList.add("active-heading");
+                    } else {
+                        item.querySelector("h4").classList.remove("active-heading");
+                    }
+                });
             }
         });
-    }
-});
         $(document).ready(function () {
-       $("#subscribe-form").on("submit", function (e) {
-           e.preventDefault(); // Prevent the default form submission behavior
-   
-           var formData = new FormData($(this)[0]);
-   
-           $.ajax({
-               type: "POST",
-               url: $(this).attr("action"),
-               data: formData,
-               processData: false,
-               contentType: false,
-               success: function (data) {
-                   // Display the success message in an alert pop-up
-                   alert(data.success_message);
-   
-                   // Optionally, you can clear the input field
-                   $("#subscribe-form input[name='email']").val('');
-               },
-               error: function (xhr, status, error) {
-                   // Handle errors here
-                   console.error(xhr.responseText);
-               },
-           });
-       });
-   });
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
+
+                var formData = new FormData($(this)[0]);
+
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
+
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
+        });
 
 
 

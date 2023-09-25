@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
@@ -20,110 +20,117 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootsnav.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11271054553"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-11271054553'); </script>
 </head>
+
 <body>
-    
-     <!-- Preloader Start -->
-     <div class="se-pre-con"></div>
-     <!-- Preloader Ends -->
- 
-     <!-- Start Header Top 
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
      ============================================= -->
-     <div class="top-bar-area inc-pad bg-theme text-light">
-         <div class="container">
-             <div class="row align-center">
-                 <div class="col-lg-6 info">
-                     <ul>
-                         <li>
-                             <i class="fas fa-map-marker-alt"></i> Thrissur,Kerala
-                         </li>
-                         <li>
-                             <i class="fas fa-envelope-open"></i> info@softverses.com
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="col-lg-6 text-right item-flex">
-                     <div class="info">
-                         <ul>
-                             <li>
-                                 <i class="fas fa-clock"></i>Working Hours: 8:00 AM – 7:45 PM
-                             </li>
-                         </ul>
-                     </div>
-                     <div class="social">
-                         <ul>
-                             <li>
-                                 <a href="#">
-                                     <i class="fab fa-facebook-f"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#">
+    <div class="top-bar-area inc-pad bg-theme text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Thrissur,Kerala
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> info@softverses.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i>Working Hours: 8:00 AM – 7:45 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href=" https://www.facebook.com/softverses" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/softverses/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                                    target="_blank">
                                     <i class="fab fa-instagram"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#">
-                                     <i class="fab fa-linkedin-in"></i>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-     <!-- End Header Top -->
- 
- 
-     <!-- Header 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/97199449/admin/feed/posts/?feedType=following"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+
+    <!-- Header 
      ============================================= -->
-     <header id="home">
- 
-         <!-- Start Navigation -->
-         <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
- 
-             <div class="container">
- 
-                 <!-- Start Atribute Navigation -->
-                 <div class="attr-nav inc-border">
-                     <ul>
-                         <li class="contact">
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default active-border navbar-sticky bootsnav">
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav inc-border">
+                    <ul>
+                        <li class="contact">
                             <i class="fas fa-phone"></i>
                             <p>Call us today! <strong>+91 8075955676</strong></p>
                         </li>
-                     </ul>
-                 </div>        
-                 <!-- End Atribute Navigation -->
- 
-                 <!-- Start Header Navigation -->
-                 <div class="navbar-header">
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                         <i class="fa fa-bars"></i>
-                     </button>
-                     <a class="navbar-brand" href="{% url 'homepage' %}">
-                         <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="softverses-main-logo">
-                     </a>
-                 </div>
-<!-- End Header Navigation -->
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'homepage' %}">
+                        <img src="{% static 'images/Main_logo.png' %}" class="logo" alt="softverses-main-logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li>
                             <a href="{% url 'homepage' %}">Home</a>
-                            
+
                         </li>
                         <li>
-                            <a href="{% url 'about_us' %}" >About Us</a>
-                            
+                            <a href="{% url 'about_us' %}">About Us</a>
+
                         </li>
-                        <li >
+                        <li>
                             <a class="active" href="{% url 'service' %}">Services</a>
-                            
+
                         </li>
                         <li>
-                            <a href="{% url 'technology' %}"  >Technology</a>                           
+                            <a href="{% url 'technology' %}">Technology</a>
                         </li>
                         <li>
                             <a href="{% url 'blog' %}">Blog</a>
@@ -143,9 +150,10 @@
     </header>
     <!-- End Header -->
 
-<!-- Start Breadcrumb 
+    <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image: url('static/images/Purple-liquid-effect.png');">
+    <div class="breadcrumb-area shadow dark bg-fixed text-light"
+        style="background-image: url('static/images/Purple-liquid-effect.png');">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6">
@@ -153,8 +161,7 @@
                 </div>
                 <div class="col-lg-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li><a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a></li>
                         <li class="active">Services</li>
                     </ul>
                 </div>
@@ -162,7 +169,7 @@
         </div>
     </div>
     <!-- End Breadcrumb -->
-<!-- Start Services 
+    <!-- Start Services 
     ============================================= -->
     <div class="thumb-services-area default-padding carousel-shadow relative bg-cover">
         <div class="container">
@@ -170,13 +177,14 @@
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
-                        <img src="{% static 'images/Web_development_Vector.png' %}" alt="Web_development_Vector_image" class="img-fluid">
+                        <img src="{% static 'images/Web_development_Vector.png' %}" alt="Web_development_Vector_image"
+                            class="img-fluid">
                     </div>
                     <div class="info">
                         <h4>Web Development</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
-                        </p>
+                            We offer comprehensive web development services, tailoring solutions to your unique needs,
+                            from designing user-friendly websites to developing robust web applications. </p>
                         <a href="{% url 'web_services' %}">Discover More <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -184,13 +192,14 @@
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
-                        <img src="{% static 'images/Digital_marketing_vector.png' %}" alt="Digital_marketing_vector_image" class="img-fluid">
+                        <img src="{% static 'images/Digital_marketing_vector.png' %}"
+                            alt="Digital_marketing_vector_image" class="img-fluid">
                     </div>
                     <div class="info">
                         <h4>Digital Marketing</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
-                        </p>
+                            Unlock the full potential of your online presence with our digital marketing services,
+                            designed to drive traffic, engagement, and conversions for your business. </p>
                         <a href="{% url 'digiatl_marketing' %}">Discover More <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -198,13 +207,14 @@
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
-                        <img src="{% static 'images/Branding_Vector.png' %}" alt="Branding_Vector_image" class="img-fluid">
+                        <img src="{% static 'images/Branding_Vector.png' %}" alt="Branding_Vector_image"
+                            class="img-fluid">
                     </div>
                     <div class="info">
                         <h4>Branding</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
-                        </p>
+                            Elevate your brand's identity and recognition with our strategic branding services, crafting
+                            a compelling narrative that resonates with your target audience. </p>
                         <a href="{% url 'branding' %}">Discover More <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -212,14 +222,16 @@
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
-                        <img src="{% static 'images/Social_Media_Management_Vector_image.png' %}" alt="Social_Media_Management_Vector_image" class="img-fluid">
+                        <img src="{% static 'images/Social_Media_Management_Vector_image.png' %}"
+                            alt="Social_Media_Management_Vector_image" class="img-fluid">
                     </div>
                     <div class="info">
                         <h4>SMM</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
-                        </p>
-                        <a href="{% url 'social_media_management' %}">Discover More <i class="fas fa-angle-right"></i></a>
+                            Our social media management services will amplify your online presence, fostering meaningful
+                            connections with your audience and driving growth for your brand. </p>
+                        <a href="{% url 'social_media_management' %}">Discover More <i
+                                class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
                 <!-- End Single Item -->
@@ -231,8 +243,8 @@
                     <div class="info">
                         <h4>SEO</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
-                        </p>
+                            Maximize your online visibility and climb search engine rankings with our SEO services,
+                            designed to boost organic traffic and drive tangible results for your website. </p>
                         <a href="{% url 'seo' %}">Discover More <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -240,12 +252,14 @@
                 <!-- Single Item -->
                 <div class="item">
                     <div class="icon">
-                        <img src="{% static 'images/Web_Hosting_Vector_Image.png' %}" alt="Web_Hosting_Vector_Image" class="img-fluid">
+                        <img src="{% static 'images/Web_Hosting_Vector_Image.png' %}" alt="Web_Hosting_Vector_Image"
+                            class="img-fluid">
                     </div>
                     <div class="info">
                         <h4>Web Hosting</h4>
                         <p>
-                            Extremity now strangers contained breakfast him discourse additions. Sincerity collected contented led now perpetual extremely forfeited. 
+                            Experience seamless website performance and reliability with our web hosting services,
+                            offering robust infrastructure and 24/7 support to keep your online presence effectively.
                         </p>
                         <a href="{% url 'web_hosting' %}">Discover More <i class="fas fa-angle-right"></i></a>
                     </div>
@@ -255,17 +269,18 @@
         </div>
     </div>
     <!-- End Services Area -->
-   
-   <!-- Start Video Area 
+
+    <!-- Start Video Area 
     ============================================= -->
-    <div class="video-area extra-padding text-center default-padding faq-area bg-gray bg-fixed shadow dark text-light" style="background-image:  url('static/images/choose-us-image.png');">
+    <div class="video-area extra-padding text-center default-padding faq-area bg-gray bg-fixed shadow dark text-light"
+        style="background-image:  url('static/images/choose-us-image.png');">
         <div class="container">
             <div class="content">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <h5>Why Choose Us</h5>
-                        <h2>We Provide Outsourced IT Services <br> For your business</h2>
-                        
+                        <h2>We Provide IT Services <br> For your business</h2>
+
                     </div>
                 </div>
             </div>
@@ -277,7 +292,7 @@
         <!-- Fixed Shpae Bottom -->
     </div>
     <!-- End Video Area -->
- <!-- Start Why Choose Us 
+    <!-- Start Why Choose Us 
     ============================================= -->
     <div class="choose-us-area default-padding-bottom">
         <div class="container">
@@ -287,9 +302,10 @@
                     <div class="single-item col-lg-6 col-md-6">
                         <div class="item">
                             <div class="info">
-                                <h4>24/7 Customer support</h4>
+                                <h4>24/7 Project Assistance</h4>
                                 <p>
-                                    Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no.
+                                    Our 24/7 project assistance ensures round-the-clock support to keep your project on
+                                    track and address any issues promptly.
                                 </p>
                                 <div class="call">
                                     <div class="icons">
@@ -312,9 +328,10 @@
                             <div class="info">
                                 <h4>Smart solutions</h4>
                                 <p>
-                                    Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no.
+                                    With our smart solution, businesses can streamline processes, reduce costs, and make
+                                    data-driven decisions, ultimately achieving sustainable growth and a competitive
+                                    edge in the market.
                                 </p>
-                                <a href="#" class="btn-more">Start Now</a>
                             </div>
                         </div>
                     </div>
@@ -325,26 +342,32 @@
     </div>
     <!-- End Why Choose Us Area -->
 
-     <!-- Start Clients 
+    <!-- Start Clients 
     ============================================= -->
     <div class="clients-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="clients-carousel owl-carousel owl-theme">
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/HTML-logo-grayscale.png' %}" alt="HTML-logo-grayscale-image"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/css-logo-greyscale.png' %}" alt="css-logo-greyscale-image"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Javascript-logo-greyscale.png' %}" alt="Javascript-logo-greyscale-image"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Django-logo-grayscale.png' %}" alt="Django-logo-grayscale-image"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/Python-logo-grayscale.png' %}" alt="Python-logo-grayscale-image"></a>
-                        <a href="{% url 'technology' %}"><img src="{% static 'images/aws-greyscale-logo.png' %}" alt="aws-greyscale-logo-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/HTML-logo-grayscale.png' %}"
+                                alt="HTML-logo-grayscale-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/css-logo-greyscale.png' %}"
+                                alt="css-logo-greyscale-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Javascript-logo-greyscale.png' %}"
+                                alt="Javascript-logo-greyscale-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Django-logo-grayscale.png' %}"
+                                alt="Django-logo-grayscale-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/Python-logo-grayscale.png' %}"
+                                alt="Python-logo-grayscale-image"></a>
+                        <a href="{% url 'technology' %}"><img src="{% static 'images/aws-greyscale-logo.png' %}"
+                                alt="aws-greyscale-logo-image"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Clients Area -->
-   <!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
@@ -362,10 +385,11 @@
                                 Discover a full spectrum of services at softverses, where we excel in web
                                 development, digital marketing, and branding to elevate your digital presence
                             </p>
-                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post" enctype="multipart/form-data">
+                            <form id="subscribe-form" action="{% url 'email_subscribe_home' %}" method="post"
+                                enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>  
+                                <button type="submit"> <i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
                     </div>
@@ -427,7 +451,7 @@
                                 <ul>
                                     <li>
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        Thrissur,Kerala,India 6980563
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
@@ -437,7 +461,8 @@
                             </div>
                             <div class="download">
                                 <h5>Payment Accepted</h5>
-                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}" alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
+                                <p><img src="{% static 'images/Payments_accepted_Image_Visa_UPI_Mastercard_Paypal.png' %}"
+                                        alt="Payments_accepted_Image_Visa_UPI_Mastercard_Paypal"></p>
                             </div>
                         </div>
                     </div>
@@ -450,16 +475,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
+                        <p>Copyright &copy; 2023. Designed by <a href="{% url 'homepage' %}">Softverses</a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
                                 <a href="{% url 'terms_and_condition' %}">Terms & conditions</a>
                             </li>
-                           
+
                             <li>
-                                <a href="#">Support</a>
+                                <a href="{% url 'contact' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -469,10 +494,10 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
-   
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    
+
     <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -492,34 +517,35 @@
     <script src="{% static 'js/bootsnav.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
-<script>
-     $(document).ready(function () {
-    $("#subscribe-form").on("submit", function (e) {
-        e.preventDefault(); // Prevent the default form submission behavior
+    <script>
+        $(document).ready(function () {
+            $("#subscribe-form").on("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
 
-        var formData = new FormData($(this)[0]);
+                var formData = new FormData($(this)[0]);
 
-        $.ajax({
-            type: "POST",
-            url: $(this).attr("action"),
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                // Display the success message in an alert pop-up
-                alert(data.success_message);
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the success message in an alert pop-up
+                        alert(data.success_message);
 
-                // Optionally, you can clear the input field
-                $("#subscribe-form input[name='email']").val('');
-            },
-            error: function (xhr, status, error) {
-                // Handle errors here
-                console.error(xhr.responseText);
-            },
+                        // Optionally, you can clear the input field
+                        $("#subscribe-form input[name='email']").val('');
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle errors here
+                        console.error(xhr.responseText);
+                    },
+                });
+            });
         });
-    });
-});
-</script>
+    </script>
 
 </body>
+
 </html>
