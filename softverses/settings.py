@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'softverses.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'softverses',
         'USER':'root',
         'PASSWORD':'',
