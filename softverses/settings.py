@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'softverses.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'softverses',
         'USER':'root',
         'PASSWORD':'',
@@ -125,9 +125,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_URL = '/media/'
-
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') 
 
 # pip install pillow
 STATICFILES_DIRS = (

@@ -711,7 +711,7 @@
                             <p>Reach us out to get a quote</p>
                         </div>
                         <form action="{% url 'contact_home_details' %}" method="post" class="contact-form"
-                            enctype="multipart/form-data" onsubmit="return false;">
+                            enctype="multipart/form-data" >
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-6">
@@ -987,32 +987,32 @@
 
     <script>
 
-        $(document).ready(function () {
-            $("form.contact-form").on("submit", function () {
-                var formData = new FormData($(this)[0]);
+        // $(document).ready(function () {
+        //     $("form.contact-form").on("submit", function () {
+        //         var formData = new FormData($(this)[0]);
 
-                $.ajax({
-                    type: "POST",
-                    url: $(this).attr("action"),
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function (data) {
-                        // Display the success message in a browser-native alert
-                        alert(data.success_message);
+        //         $.ajax({
+        //             type: "POST",
+        //             url: $(this).attr("action"),
+        //             data: formData,
+        //             processData: false,
+        //             contentType: false,
+        //             success: function (data) {
+        //                 // Display the success message in a browser-native alert
+        //                 alert(data.success_message);
 
-                        // Optionally, you can reset the form
-                        $("form.contact-form")[0].reset();
-                    },
-                    error: function (xhr, status, error) {
-                        // Handle errors here
-                        console.error(xhr.responseText);
-                    },
-                });
+        //                 // Optionally, you can reset the form
+        //                 $("form.contact-form")[0].reset();
+        //             },
+        //             error: function (xhr, status, error) {
+        //                 // Handle errors here
+        //                 console.error(xhr.responseText);
+        //             },
+        //         });
 
-                return false; // Prevent the default form submission
-            });
-        });
+        //         return false; // Prevent the default form submission
+        //     });
+        // });
 
 
         $(document).ready(function () {
